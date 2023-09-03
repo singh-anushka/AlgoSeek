@@ -1,0 +1,46 @@
+
+ 
+RIO Olympics 2016 is hosting a team event where n teams are segregated into k groups such that n%k=0 and each group contains n/k teams. You've been given a partial schedule of the tournament and job is to segregate the teams into k different groups. However, neither n nor k has been directly given to you. What has been given is the partial schedule of x matches. With the help of this schedule, you need to print the teams segregated into different groups in alphabetical order. Also print the two groups by printing the group which contains the alphabetically first team first. Although the schedule is partial, it contains at least one match of each team.
+
+ 
+Input
+
+
+The first line consists of a single integer x denoting number of matches in the partial schedule.
+The next x are strings in the form 'CTR1 vs CTR2' where CTR1 and CTR2 are the two teams competing in the match.
+
+
+Output
+
+
+The 'k' lines of the output contain n/k strings in each line separated by a space in alphabetical order.
+
+
+Constraints
+Should contain all the constraints on the input data that you may have. Format it like:
+
+1 ≤ x ≤ 200
+1 ≤ n ≤ 200
+1 ≤ k ≤ 12
+No country name contains a space.
+
+ 
+Example
+Input:
+7
+BRAZIL vs ARGENTINA
+INDIA vs AUSTRALIA
+RUSSIA vs MEXICO
+UNITED_STATES vs THAILAND
+MEXICO vs BRAZIL
+INDIA vs UNITED_STATES
+RUSSIA vs ARGENTINA
+
+Output:
+ARGENTINA BRAZIL MEXICO RUSSIA
+AUSTRALIA INDIA THAILAND UNITED_STATES
+
+ 
+Explanation
+We've been given 7 matches of the schedule (line 1). From the schedule, we infer that there are 8 teams (n=8). On careful observation, we realise that two equal groups can be made with BRAZIL, ARGENTINA, MEXICO and RUSSIA in one group and INDIA, AUSTRALIA, UNITED_STATES and THAILAND in the other. We print the names of the countries per group in alphabetical order. Also, as ARGENTINA is the first team alphabetically, its group is printed prior to the group of AUSTRALIA, which is alphabetically first in the second.  
+

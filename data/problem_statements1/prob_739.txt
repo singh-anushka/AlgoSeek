@@ -1,0 +1,52 @@
+
+
+Alice and Bob go to the same college in ByteLand. Each day Bob walks Alice to her home after college. Today being the last day of college, he wants to spend maximum time with her.
+
+
+ByteLand is made up of N points(numbered 0 to N - 1) where point 0 is the location of her college. Alice lives just outside the Byteland at point X(represented by index -1). One special thing about all the points in the city is that all of them have exactly one outbound road from them which may lead to any of the other points or they may lead to the point X. Some roads are mysterious too as they may lead back to themselves in a self-loop making a person stuck there as there is no other road going out. There are no bidirectional roads in ByteLand.
+
+
+Bob knows that Alice will get very angry if he repeats the same road twice or visits the same point twice on their way home. She has a good memory and remembers each road she walked. None of his tricks will work. He decides to pray to God to grant him a wish. God pleased with his prayers grants him the power to redirect the road leading out from atmost one of the points u ∈ [0, N - 1] and direct it to any other point of his choice(including X).
+
+
+He wants to know what is the maximum length path he can create such that path  starts at 0 and ends at X so that he can maximize the time he gets to spend with Alice. You may assume that travelling each road takes one minute. Also, you may assume that they spend no time waiting at a point. Can you help him? 
+Input
+
+The first line of input has the number of test cases T.  
+The first line of each test case has the number of points i.e. N.
+
+The second line of each test case consists of N space separated integers x0, x1, ..., xN - 1, denoting that there is a road leading out of i and ending at xi.
+If a road leads to Alice's home i.e. point X, then the corresonding xi value will be -1.
+
+Output
+
+For each test case output the maximum number of minutes he spends with Alice, in one line.
+
+Constraints
+
+1 ≤ T ≤ 5
+1 ≤ N ≤ 5*105
+1 ≤ Sum of N over all tests  ≤ 5*105
+
+Example
+Input:
+2
+4
+-1 -1 -1 -1
+4
+1 2 3 -1
+
+Output:
+2
+4
+
+
+Explanation:
+
+Test case 1 : All roads lead to Alice's house; the way to maximise time is to redirect the road coming out from 0 to point to 1 or 2 or 3. This way, Bob will travel through two roads before reaching Alice's home. 
+Test case 2 : The set-up of roads is optimal. He will spend 4 minutes with Alice before she reaches her home.
+
+
+Note: Large input files. Use scanf/printf in C++.
+
+

@@ -1,0 +1,25 @@
+
+On the day of Christmas, when everyone is busy celebrating, but suddenly NN aliens come on Earth and each alien demands a unique positive number (number>0)(number>0) from Santa.
+Everyone is afraid to see the aliens on earth. So, Santa wants the aliens to go back from earth, and the only way for the aliens to go back is that the GCD of the numbers (given by Santa to aliens) of every possible pair of aliens must be equal to the number of aliens.
+Santa wants to distribute the numbers among the aliens in such a way that the sum of numbers given to the aliens is minimum.
+Input:
+
+First-line will contain N, the number of aliens that come on earth.
+
+Output:
+
+Print the required N numbers in a line separated by spaces in increasing order.
+
+Constraints
+
+2≤N≤5∗105
+
+Sample Input:
+3
+
+Sample Output:
+3 6 9
+
+EXPLANATION:
+For N=3, the required 3 Numbers are {3,6,9}. and the sum is 18 which is minimum, and the gcd(3,6), gcd(6,9), gcd(3,9) are equal to 3.
+

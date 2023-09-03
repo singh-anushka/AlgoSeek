@@ -1,0 +1,85 @@
+
+ 
+Given the positions of a white bishop and a black pawn on the standard chess board, determine whether the bishop can capture the pawn in one move.
+ 
+Input
+
+
+The first line contains T i.e. the number of test cases.
+.
+T lines follow, each line containing two space seperated strings containing the positions of bishop and pawn respectively.
+
+Output
+
+For each testcase, print  "true" if bishop ca capture the pawn otherwise "false" in new line without quotes.
+
+ 
+Constraints
+
+1 ≤ T ≤ 10^9
+
+Example
+Input:
+2
+A1 C3
+H1 H3
+
+Output:
+true
+false
+
+
+Solution#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+	
+	int t;
+	scanf("% d",t);
+	
+    while(t)
+	{
+		string cell1,cell2;
+	cin>>cell1;
+	cin>>cell2;
+		 struct Parser {
+		 	int getX(char pos) {
+		 		return pos-'A';
+			 }
+			 	int gety(char pos) {
+		 		return pos-'A';
+			 }
+		 };
+		Parser myParser;
+		int x1,y1,x2,y2;
+		 x1 = myParser.gety(cell1[0]),
+		y1 = myParser.gety(cell1[1]),
+		x1 = myParser.getx(cell2[1]),
+		y2 = myParser.gety(cell2[1]);
+		
+	if(x1==y1 && x2==y2)
+	{
+		printf(" true\n");
+		}
+		else
+		printf(" false\n");	
+		
+    }
+	return 0;
+}
+
+
+
+Steps to be followed
+    1. Read the given description carefully and understand the problem.
+
+    2. Analyze the code given in the problem and find bugs(errors) in these codes..
+
+    3. The given code can be copied and compiled in an online compiler (Eg. ideone.com).
+
+    4. Once the bugs are eliminated from the code, the clean code can be submitted as the solution to the problem..
+
+    5. The solution should be a debugged version of the code provided and must satisfy the test cases to be accepted..
+All the best!!
+

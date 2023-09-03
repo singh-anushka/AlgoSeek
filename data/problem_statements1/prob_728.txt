@@ -1,0 +1,43 @@
+
+ 
+One day, Flippy the bird is travelling around the city using the subway lines. There are n cities in town and m pairs of cities are connected by a subway line. Each subway line is operated by a company, ti. Flippy lives in city s, and wonders what is the minimum cost for him to get from s to other cities. Each subway line has a cost ci. This means that Fluffy has to pay ci coins to use the subway line. In addition, suppose the last subway line Fluffy used is from company i and the current subway line Fluffy uses is from comapny j, then Fluffy has to pay an additional cost of pi, j coins. This cost will not be incurred if Fluffy never used a subway line before, i.e. the current subway line is his first subway line. Your task is to determine for all cities x, what is the minimum cost Fluffy needs to pay to get from city s to x or determine that it is impossible.
+ 
+Input
+The first line of input contains 4 space-seperated integers, n, m, k, s, denoting the number of cities, the number of subway lines, the number of companies and the starting city. (the city Fluffy lives in)
+
+The next k lines contain k space-seperated integers each. The j-th integer on the i-th row denotes pi, j, the cost incurred if one uses a subway line by company j immediately after using a subway line by company i.
+
+Then, m lines follow. Each line describes a subway line. Each line contains 4 space-seperated integers, ui, vi, ci, ti, denoting that the subway line connects cities ui and vi, the cost of travelling on it is ci and it is operated by company ti.
+Output
+Output n space-seperated integers. The i-th integer should be the minimum cost required for Fluffy to travel from city s to city i. If this is impossible, output -1 instead.
+Constraints
+
+1 ≤ n, m ≤ 100000
+1 ≤ k ≤ 10
+1 ≤ ci ≤ 10000
+1 ≤ ui, vi ≤ n
+1 ≤ ti ≤ k
+
+Subtasks
+
+Subtask 1 (20 points) : k = 1, ci = 1
+Subtask 2 (30 points) : k = 1
+Subtask 3 (50 points) : Original Constraints
+
+Example
+Input:
+5 4 2 3
+12 4
+3 1
+1 4 5 1
+1 2 4 2
+3 2 3 1
+2 4 10 1
+
+Output:
+11 3 0 19 -1
+
+ 
+Explanation
+Example case 1. The optimal path from city 3 to 1 is 3 -> 2 -> 1, which costs 3 + 4 + 4 = 11. The optimal path from city 3 to 2 is 3 -> 2. The optimal path from city 3 to 4 is 3 -> 2 -> 1 -> 4 which costs 3 + 4 + 4 + 5 + 3 = 19, which is less than the path 3 -> 2 -> 4 which costs 3 + 10 + 12 = 25. It is impossible to reach city 5 from city 3.
+

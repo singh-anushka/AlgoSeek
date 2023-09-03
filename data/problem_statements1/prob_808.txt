@@ -1,0 +1,15 @@
+
+We all love the avengers and we all hate thanos. We know the main mission of thanos is to wipe out half of the population of the planet. But there are alternate universes, and in these universes too Thanos is the evil and the avengers are the heroes. But now we will not talk about avengers , in fact you need to help Thanos. In these universes Thanos not like to just wipe out half of the population, but he wants to destroy planets. In these universes, there is a special system/layout of the planets that the planets are interdependent on each other i.e. if one planet gets destroyed, the next one also gets destroyed and so..on. However, sometimes destruction of one planet fails to destroy  the next one. In that case Thanos himself need to destroy the planets to start the chain again. And thanos wants to destroy all the planets and you need to help him.
+So, your task is to determine , given the system/layout of some planets, the minimum number of planets Thanos needs to destroy himself such that all the planets gets destroyed.
+Input
+The first line of input contains one integer specifying the number of alternate universes to follow. Each test case( an alternate universe ) begins with a line containing two integers, each no larger than 100 000. The first integer n is the number of planets and the second integer m is the number of lines to follow in the test case( an alternate universe). The planets are numbered from 1 to n. Each of the following lines contains two integers x and y indicating that if planets number x gets destroyed , it will cause planet number y to get destroyed as well.
+Output
+For each test case, output a line containing one integer, the minimum number of planets that must be destroyed by Thanos himself.
+SAMPLE INPUT
+1
+3 2
+1 2
+2 3
+SAMPLE OUTPUT
+1
+

@@ -1,0 +1,42 @@
+
+There are three friends Mota , Chotua and Expert. Recently they all get placed  at reputed MNC.  Mota, a foodie person have already  decided to spend all his money on Samosa, while his friends Chotua and Expert have different plans and there cumulative salary is N coins. 
+Chotua and Expert are competitive in nature and due to  this  their friend Mota decided to give equal numbers of coins to both of them  people.
+He has two options
+
+Choose some number k. Considering all coins identical, give k coins to Chotua. Next, treat remaining n−k coins as distinct and give k coins to Expert. Lets say there are p1 ways to do so for all possible k.
+Choose some number k. Considering all coins distinct, give k coins to Chotua. Next ,treat remaining n−k coins as identical and give k coins to Expert. Lets say there are p2 ways to do so for all possible k.
+
+Calculate the ratio of p1 and  p2 . As this number can be rather large,he asks you to count the remainder after dividing it with 109+7.
+Note it is guaranteed that n is odd.
+Input Format:
+
+1st line contains T which denotes number of testcase.
+Following T lines contains single integer N denoting cumulative salary .
+
+Output Format:
+
+A single integer denoting the ratio of p1 and  p2 modulo 109 + 7.
+
+Constraints:
+
+1≤T≤105
+1≤N≤1018−1 where N is odd
+
+Sample Input
+2
+1
+3
+Sample Output
+1
+750000006
+Explanation
+
+In the first case there is only one way for the first option , 0 coins to both i.e p1=1 .Similarly one way for the second option i.e  p2=1. p1/p2=1; 
+In Second case ,here are 4 ways for option 2 {0 coins to both},{1st coin to B},{2nd coin to B},{3rd coin to B}.So p2=4there are 3 ways
+
+1-> 0 coins to both
+2,3-> 1 coins to B then 2 ways to pick 1 coin from the remaining 2 coins.
+For the first option ie p1=3. 
+Hence answer is (3/4) % 1000000007 =750000006
+
+

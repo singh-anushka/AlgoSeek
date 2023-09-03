@@ -1,0 +1,57 @@
+
+          
+            Ms. Khan likes eating chocolates, she has BBB number of chocolates in her bag. Ms. Khan becomes happy if she gets a gift box filled with a number of chocolates AAA which is divisible by the chocolates she already have (BB) in her bag. To make Ms. Khan happy, Mr. Hawk is preparing a gift box which already have XX number of chocolates inside. And Mr. Hawk puts one chocolate every day in that box. Find out the minimum number of days will Mr. Hawk take to prepare the box of Ms. Khan’s happiness i.e, make XX number of chocolates divisible by chocolates in Ms. Khan’s bag. Answer is zero if chocolates in gift box are already divisible by chocolates in bag. (as Mr. Hawk will not need any time to prepare the gift box).
+You have to answer TT independent testcases.
+
+Input:
+
+- First line will contain T, number of testcases. Then the testcases follow. 
+- Each testcase contains a single line of input, two integers X,B. 
+
+
+Output:
+
+For each testcase, output is a single line answering the minimum number of days required to prepare the box.
+
+
+Constraints 
+
+
+1≤T≤1000
+
+ 1≤X,B≤109
+
+
+
+
+Sample Input:
+4
+2 4
+10 4
+92 46
+123 456
+
+
+
+Sample Output:
+2
+2
+0
+333
+
+
+EXPLANATION:
+
+In case 3 : the gift box is already prepared
+In case 1: the box will get prepared after two days
+In case 2: Mr. hawk will need two days to prepare the gift box
+In case 4: Mr. hawk will need 333 days to prepare the gift box i.e. after 333 days the gift box will have 456 chocolates, which is divisible by 456.
+
+            
+            
+            
+            
+            
+        
+
+        

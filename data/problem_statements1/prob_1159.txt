@@ -1,0 +1,38 @@
+
+Today is the birthday of Mukesh. He wants to buy sweets for his friends so he went to the Chef sweet shop. He has X amount of cash with him. The pricing of sweets is as follows.
+If he selects N sweets and places them in a single line then the price of the ith sweet from left is i2. 
+He wants to maximize his purchase of sweets to share with his friends. Can you help him? Chef has a total of 106 sweets. 
+
+Input:
+
+First line contains T, the number of testcases. Then the testcases follow. 
+Each testcase contains a single line of input, one integer X. 
+
+
+Output:
+For each testcase, output in a single line answer maximum sweets.
+
+Constraints
+
+1≤T≤104
+1≤X≤1018
+
+
+Subtasks
+
+Subtask #1(30 points): 1≤T≤10, 1≤X≤1013
+Subtask #2(70 points): Original Constraints
+
+
+Sample Input:
+1
+42
+
+
+Sample Output:
+4
+
+
+EXPLANATION:
+4 sweets will cost him 30 whereas 5 will cost 55. Thus he can't buy more than 4.
+

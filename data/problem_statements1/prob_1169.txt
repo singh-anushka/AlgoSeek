@@ -1,0 +1,45 @@
+
+
+Problem :
+
+Attendance is very important for any student to take a semester exam. So your task is to make a program that can display the status. Given the number of classes attended(NANA) and a total number of classes conducted(NCNC). Let P be the percentage of attendance. Its status needs to be printed as below.
+
+.
+90≤P≤10090 \leq P \leq 100=Very Good
+80≤P≤8980 \leq P \leq 89=Good
+75≤P≤7975 \leq P \leq 79=Average
+P<75P < 75=Danger
+
+Input:
+
+
+First line contains number of test cases(T).
+
+Next T lines contain NA and NC separated by a space.
+
+
+Output:
+
+
+Print the status in a single line for each T.
+
+Constraints:
+
+
+1≤T≤100
+
+1≤NA≤1000
+
+1≤NC≤1000
+
+Sample Input:
+
+
+1
+123 525
+
+Sample Output:
+
+
+Danger
+

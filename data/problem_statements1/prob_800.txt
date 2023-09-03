@@ -1,0 +1,24 @@
+
+This is a simple cakewalk problem.In this problem you have to print shortest path from one point to another.
+ Input:
+- First line of the input contains an integer N denoting the number of groups. Description of N groups follows.
+- Next N lines will consist of a single line containing maximum M space separated integers I.
+- Last line of input will contain 2 space separated integers A and B.
+Output: - Output is a single line containing space separated integers showing shortest path to reach from A to B. - If there is no path then print None.
+Constraints: 1 <= N <= 10 2 <= M <= 10 0 <= I, A, B <= 100
+Example:
+Input:
+6			
+1 2			
+3 4			
+2 3 6		
+3 6			
+7 6			
+7 8 9		
+1 8			
+
+ 
+Output: 1 2 6 7 8
+Explanation: - In above example, we have to find the shortest path between 1 and 8 - 1 and 2 are in the same group - 2 and 6 are in the same group - 6 and 7 are in the same group - 7 and 8 are in the same group - Hence shortest path becomes 1 2 6 7 8
+Note: There are many possible paths from 1 to 8, but since we have to find the shortest one, we considered this path.
+

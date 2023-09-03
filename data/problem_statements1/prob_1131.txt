@@ -1,0 +1,34 @@
+
+Ram plays a strange number game. There are NN blocks numbered from  11  to N.
+At the beginning of game ram is at  Nth block and he wants to come at  1st block to win the game in minimum number of moves.
+In one move, he can perform one of the following operations
+
+If the number is power of two then divide it by  2  and that becomes the new position of Ram
+If not then reduce it by the next lower number which is power of  2  which is Ram's new position
+
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each testcase contains an integer N (initial position of Ram).
+
+Output:
+For Each test case print a single line minimum number of moves.
+Constraints
+
+1≤T≤10
+1≤N≤ 264 - 1
+
+Sample Input:
+4
+1
+2
+3
+6
+
+Sample Output:
+0
+1
+1
+2
+
+

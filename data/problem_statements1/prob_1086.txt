@@ -1,0 +1,24 @@
+
+A country has total BB Covid Beds under its control.There are total NN states in the country.Each state can demand at most Ki,  1≤i≤N  beds so that they can successfully use them for treatment of  Covid Patients. Now,head of the country wants to allocate all the B beds to different states. He wants to know the number of ways to do so.Each state might also get 0 beds.Help him!
+Since total number of ways can be large, output the answer modulo  109+7.
+Input:
+
+First line will contain two space separated integers B,N representing number of beds and number of states respectively.Then N lines follow. 
+Second line contains N  space separated integers Ki. 
+
+Output:
+For each testcase, output in a single line answer modulo 109+7.
+Constraints
+
+1≤B≤100000
+1≤N≤50
+0≤Ki≤B
+
+Sample Input:
+   4 3
+   2 2 3
+
+Sample Output:
+   8
+
+

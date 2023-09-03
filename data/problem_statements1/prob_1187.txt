@@ -1,0 +1,42 @@
+
+Chef has two babies Chefu and Chefi. He teaches the children to walk. Out of the curiosity, Chef wants to know if Chefu and Chefi have similar walking patterns. As chefu and chefi are babies, they can move only one unit at a time. In other words, if we can think walking arena as a 2D graph, babies can move one unit in x direction or y-direction or both.if (x,y) is the initial co-ordinate, moving (x,y)(x,y) to (x+1,y),(x,y+1),(x+1,y+1),(x−1,y),(x,y−1),(x−1,y−1),(x+1,y−1),(x−1,y+1)(x+1,y),(x,y+1),(x+1,y+1),(x−1,y),(x,y−1),(x−1,y−1),(x+1,y−1),(x−1,y+1) are example of valid moves.
+The walking pattern is said to be similar if the their score in every t sec is same. 
+For example- 
+Chefu Pattern: He walks from point A to B in first t sec and then to C in next t sec and optimal score between A and B is x and between B and C is y.
+Chefi Pattern: She walks from point P to Q in first t sec and then R in next t sec and optimal score between P and Q is z and between Q and R is w.
+The walking pattern is similar if value of (x,y)(x,y) is same as (z,w) irrespective of order. For ex.- In this case it can be similar if (x=3,y=4,z=4,w=3) or (x=3,y=4,z=3,w=4).
+Optimal Score is the total number of  valid moves baby takes from reaching A to B.
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+The first line of each test case contains one integers M denoting the number of points.
+Each of the next 2∗m lines contains two integers x,y denoting the co-ordinates. First m lines contains co-ordinates of Chefu's and next m lines contains co-ordinates of Chefi's path.   
+
+Output:
+For each testcase, output "YES" or "NO" to tell if the pattern is similar or not.
+Constraints
+
+1≤T≤1000
+2≤M≤105
+−109≤x,y≤109
+
+Sample Input:
+1
+3
+0 0
+1 1
+1 3
+0 0
+2 1
+3 1
+
+Sample Output:
+YES
+
+EXPLANATION:
+Chefu's path is [(0,0),(1,1),(1,3)].
+Optimal scores between points in chefu's path is 1 and 2.
+Chefi's path is [(0,0),(2,1),(3,1)].
+Optimal scores between points in chefi's path is 2 and 1.
+Therefore, there path is similar.
+

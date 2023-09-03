@@ -1,0 +1,47 @@
+
+
+    In a different world where Magic is everywhere A Dark Witch created an army of Zombies and now they are trying to destroy every city.
+    A group of Wizards are entrusted with the job of get rid of all the zombies and save the world. But all the great wizards are old and can't do much so they decided to summon someone from the other world to help them. While summoning spell was cast something wrong happened and instead of a warrior, Chef is Summoned to this world. Science the wizards are old they can't perform the summoning ritual again so they decided to ask the chef to help them. Chef got confused with all this asked someone to explain what's happening. Everyone told everything to the chef and asked him if he could help them.
+    Though Chef is not a warrior but even so he decides to help them get rid of the zombies. The great wizards granted chef with Magical powers.
+    Now chef was ready for the battle so he asked the wizards that what would he have to do.
+    A wizard explained to chef that there are N Cities( indexed from 0 to N-1 ) and there are M paths between the cities  
+    The wizards have made a map how chef will travel between the city A to city B . Chef has to cast a spell on each city he visits(maybe more than once).
+    While chef was planning to leave to travel the Zombies attacked the city indexed as Z. Chef became worried that he needs a new map to travel but they don't have enough time for that. So A wizard asked the chef to and skip the city Z and follow the rest of the map.
+    Chef if still worried so with his magical powers he contacted you to help him find that by skipping the city Z will he be able to follow the rest of the map or not.
+    
+
+
+Input
+
+The first line of the input contains an integer N denoting the number of Cities. 
+The Second line of input contains an integer M denoting the number of paths between the Cities.
+The third line of input contains an integer Z denoting the city which got attacked by the Zombies. 
+From fourth line input contains M lines of input each containing two space seperated integers A and B denoting the index of the City.
+
+
+Output
+
+Output a single line containig a string "yes" if chef can save all the other city except city Z and "no" otherwise 
+
+
+Constraints
+
+1 ≤ N ≤ 105
+1 ≤ M ≤ 105
+0 ≤ Z ≤ 105
+0 ≤ A, B ≤ 105
+
+
+Example
+Input:
+    4
+    3
+    2
+    3 0
+    0 1
+    1 2
+
+Output:
+    yes
+
+

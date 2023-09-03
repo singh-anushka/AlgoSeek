@@ -1,0 +1,39 @@
+
+          
+            Some integers satisfy following condition: 
+ They can be represented as sum of two or more consecutive positive integers.  
+I will name this condition as 'beautiful' in further statement. 
+
+For instance, 10 can be represented as sum of 1+2+3+4. 
+
+Given an integer N, find XOR of Nth integer that satisfies the beautiful condition with the maximum number smaller than this Nth integer that does not satisfy beautiful condition. 
+For instance, if N is 1, then 1st number in the set of integers that satisfies beautiful condition is 3. The maximum number smaller than 3 that does not satisfy the condition is 2. XOR of 3 and 2 is 1. 
+Please note that value of Nth number won't exceed 600 in this problem. 
+Input : 
+
+First line will contain TT, number of testcases. Then the testcases follow.
+Each testcase contains of a single integer NN. 
+
+Output : 
+For each testcase, output a single integer, according to the query asked above. 
+
+Constraints
+1≤T≤101 \leq T \leq 10 
+1≤N≤5001 \leq N \leq 500
+
+Sample Input :
+3  
+1  
+2  
+10 
+
+Sample Output :
+1 
+1 
+6
+Explanations :
+Case #1Case #1 : Explained in problem statement. 
+Case #2Case #2 :  The second integer that satisfies the condition is 5. The greatest number smaller than 5 that does not satisfy beautiful condition is 4. XOR of 5 and 4 is 1.
+Case #3Case #3 :  The first 10 integers that satisfy beautiful condition are 3,5,6,7,9,10,11,12,13,14.  
+The 10th integer that satisfies the condition is 14. The greatest number smaller than 14 that does not satisfy is 8. XOR of 14 and 8 is 6.
+

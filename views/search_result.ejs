@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=query_statement%> - AlgoSeek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body style="background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <div style="background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%) ;">
+        <div class = "input-group mb-3" style="width: 100%;">
+            <h1><a href="/search" style="text-decoration: none; color: black; margin-left: 4%;">AlgoSeek</a></h1>
+            <form action="/search" method="POST" style="margin: auto; display: block;">
+                <input size="82" style="margin:auto" type="text" class="form-control" placeholder="<%=query_statement%>" id="search" name="search"  aria-label="Search bar" aria-describedby="button-addon2" required >
+            </form>
+        </div>
+
+    </div>
+    <div class="shadow-lg p-3 mb-5 bg-body rounded" style="margin-top: 2%; margin-left: 10%; margin-right: 10%;">
+        <div>
+            <h5>Search results </h5>
+            <% if (result_arr.length > 0) { %>
+            <% for (var i = 0; i < result_arr.length; i++) { %>
+                <div style="margin-bottom: 15px;">
+                    <p style="color: grey;margin-top: 2%; margin-bottom: 0%; overflow-wrap: break-word;"><%=result_arr[i].prob_url%></p>
+                    <a href="/search/<%=result_arr[i]._id%>" target="_blank" rel="noreferrer noopener" style = "text-decoration: none; color: #1CB5E0;">
+                        <h3><%=result_arr[i].prob_title%></h3>
+                    </a>
+                </div>
+            <% } %>
+            <% } else { %>
+                <div>
+                    <h3>No results found!!</h3>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+</body>
+</html>

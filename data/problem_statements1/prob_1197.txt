@@ -1,0 +1,38 @@
+
+
+
+Our very own SS sir is teaching data structures to his students. He told the students that a full binary tree is a tree in which every node other than the leaves have two children. If one more edge is added to tree, it will definitely form a cycle.
+He has given an assignment to the students :-
+He has an infinite full binary tree.
+The root is labelled as 1.
+For a node labelled v its left child will be labelled 2*v and its right child will be labelled 2*v+1.
+Now he joins two nodes A and B. He wants to know the length of the cycle formed.
+The students are in fix. Help them to find the length of the cycle formed.
+NOTE: The line joining A and B will not cross any other node.
+Input
+First line contains Q, the number of queries. Each query consists of two space separated integers A and B in one line.
+Output
+For each query, print the required answer in one line.
+Constraints
+
+1 ≤ N ≤ 105
+1 ≤ i , j ≤ 1018
+
+Example
+Input:
+3
+2 3
+2 7
+5 15
+
+Output:
+3
+4
+6
+
+Explanation
+For 1st query, the length of the cycle formed is 3 (2 -> 1 -> 3 ->2)
+
+
+
+

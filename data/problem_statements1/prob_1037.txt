@@ -1,0 +1,41 @@
+
+Murphy is on an investigation of the quantum data based on the values obtained from the black hole. She is now trying to finish her analysis and reconcile the gravity equation with quantum mechanics. In her last step she now needs to analyse systems with multiple objects at large distances.
+To explain in detail, she is given a number NN. She needs to find a maximal cardinal set of lattice points lying within the region enclosed by 0≤x≤N0≤x≤N, 0≤y≤N such that the Manhattan distance between any two of them is at least N.
+A lattice point is a point whose integers are both coordinates.
+A Manhattan distance is the sum of absolute differences of each coordinate. Formally, the Manhattan distance between two points (x1,y1) and (x2,y2) is |x1−x2|+|y1−y2|. 
+Since she can not find this out, she wants your help.
+Input Format
+
+The first line has T, the number of test cases.
+For each test case, the only line has an integer N.
+
+Constraints
+
+1≤T≤10
+1≤N≤100000
+
+Output Format
+
+For each test case, print multiple lines.
+In the first line, print the number of points.
+In the next lines, in each line, print two space separated integers, denoting the x and y coordinates of each point.
+If there are multiple correct solutions, you may print any.
+
+Sample Input
+2
+1
+3
+
+Sample Output
+4
+0 0
+0 1
+1 0
+1 1
+4
+0 1
+1 3
+3 2
+2 0
+
+

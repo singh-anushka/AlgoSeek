@@ -1,0 +1,37 @@
+
+ 
+Problem description.
+A kid who is vexed of playing the game PAC-MAN where the Blinky is attacked by the ghosts, started to think in a different way for the case of ghosts.
+In some level he has got n ghosts which are playing on the Cartesian playground. This playground has got k magical points where the ghosts can directly move from one point to another i.e., they enter at one point and instantly appear at any other magical point with in no time.
+Each of these ghosts have got their location represented in Cartesian co-ordinate system. These ghosts plan to block the blinker at some integral point at a time. So they decide the attacking point and start moving towards it.
+These can use the magical points any number of times (negligible time taken) and can move to immediate left or right or up or bottom costing them 1s for each movement.
+Calculate the minimum time required for the ghosts to reach the attack point.
+Input
+
+The first line contains two integers n and k— the number of ghosts and the number of magical points, correspondingly.
+The next n lines contain the coordinates of the ghosts. 
+The i-th line contains two space-separated integers xi and yi : the coordinates of the i-th ghost. It is guaranteed that all ghost are located at different points.
+The next k lines contain the coordinates of the magical points. The t-th line contains two space-separated integers xt and yt— the coordinates of the t-th magical point.
+It is guaranteed that all magical point are located at different points.
+
+Output
+Print a single number — the minimum time, in which all ghosts can attack the blinky together at one point.
+Constraints
+
+1 ≤ N ≤ 105
+0 ≤ K ≤ 105
+|xi|,|xt|,|yt|, |yi|  ≤ 108
+
+ 
+Example
+Input:
+3 0
+9 -10
+9 -9
+7 -3
+
+Output:
+5
+
+ 
+

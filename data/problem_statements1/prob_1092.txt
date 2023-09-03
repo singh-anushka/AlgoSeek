@@ -1,0 +1,27 @@
+
+You are given a sequence of numbers 1,3,6,10… .
+Here first number of sequence is 1, second number is 3, third number is 6, forth number is 10, and so on. You will be given an integer NN. Determine the NN-th term of this sequence.
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, one integer N. 
+
+Output:
+For each testcase, output in a single line integer, the N-th term of the given sequence.
+Constraints
+
+1≤T≤10
+1≤N≤102
+
+Sample Input:
+3
+1
+5
+7   
+Sample Output:
+1
+15
+28   
+EXPLANATION:
+First term of sequence is 1. At N=5, the term is 15 and at N=7, the term of the sequence is 28. 
+

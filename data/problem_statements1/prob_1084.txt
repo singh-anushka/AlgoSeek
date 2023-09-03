@@ -1,0 +1,32 @@
+
+ 
+Rahul has many strings with real numbers as substring. He want to find sum of all those real
+numbers. But, he has many testcases so that he need help from you to solve his problem by making
+code.
+ 
+Input
+First line of input contain integer t denotes number of testcases.
+Next t lines containing strings containing not more than 100 real numbers with maximum 6 digits after
+decimal point.
+Each real number is separated by character 'e'.
+ 
+Output
+Print sum of all real numbers as a output in different t lines. Print sum with 4 digits after decimal
+point.
+ 
+Constraints
+0<= t <=1000
+
+­-10^10 <= Real Numbers <= 10^10
+ 
+Example
+Input:
+2
+3e5.5e6.0001e7
+1e6.6e7e8
+
+Output:
+21.5001
+22.6000
+ 
+

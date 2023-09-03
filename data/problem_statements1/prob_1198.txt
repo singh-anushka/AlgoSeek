@@ -1,0 +1,34 @@
+
+
+Problem:
+In a college, during the 2nd year of a particular batch, lateral entry students joined the college.
+Before this, the number of students in all the sections of a branch was equal. After this number of students in most of the classrooms are different. There are NNN branches in the college. for every N(i)thN(i)th branch there are MM sections. for every M(I)thM(I)th section students count is given to you.
+The Head of the college needs a code that can inform the minimum number of students who need to be shifted from one section to another section for every branch to make class strength equal.
+Write the code that can do the above task.
+It is guaranteed that student count can be  equal in every section(after performing this task).
+
+INPUT:
+
+First line contain N.
+For the next N lines each line contain M with M(I) values separated by spaces.
+OUTPUT:
+
+Print minimum number of students who need to be shifted from one section to another section for every branch to make class strength equal each in a single line .
+
+Constraints
+
+1≤N≤5
+1≤M≤10
+1≤M(i)≤500
+
+SAMPLE INPUT:
+
+2
+4 2 8 6 8
+2 2 4
+
+SAMPLE OUTPUT:
+
+4
+1
+

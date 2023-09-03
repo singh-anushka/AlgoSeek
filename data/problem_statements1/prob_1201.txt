@@ -1,0 +1,41 @@
+
+Given a positive integer number NN and non-negative integer K. A conversion can be applied to N that has two parts described as:
+
+First the bits from the rightmost set bit till the end are flipped.
+Then K is subtracted from the above new number.
+
+You need to tell the smallest non-negative number that will be left if the above conversion is applied repeatedly and also the number of conversions.
+Input:
+
+Single line which contains space-separated N, K.
+
+Output:
+For each test case, output space-separated smallest number and number of conversion
+Constraints
+
+1≤N≤1012
+0≤K≤1012
+
+Subtasks
+
+Subtask #1(10 points): 1≤N,K≤200
+Subtask #2(90 points): Original Constraints
+
+Sample Input:
+4 2
+
+Sample Output:
+1 1
+
+EXPLANATION:
+
+4 in bits-> 100
+2 in bits -> 010
+
+Conversion:
+
+Flipping: 100 -> 011
+Subtracting: 011−010=001
+After applying 1 conversion result becomes 1. If we apply it again on 1 then the result will be negative, Thus the answer is 1 1 smallest number and number of conversions respectively.
+
+

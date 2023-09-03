@@ -1,0 +1,42 @@
+
+You are given an array of size N, consisting only of -1 and 1.Your task is to make the sum of the array equals to 0. To make the sum 0, you can do ONE of the following operation in EACH step.
+
+Replace -1 by 1. 
+Replace 1 by -1.  
+
+Also, you will see that it's Not always possible to make the sum 0, if it's impossible to make the sum 0, print  −1 as a result.
+Note: Array will only contain −1 and +1 as the elements.
+Input:
+
+First line of input will contain T, number of testcases. Then the testcases follow. 
+First line of each testcase contains single integer N. 
+Second line of each test case contains N space separated integers, elements of the array. 
+
+Output:
+For each testcase, output a single line integer, minimum number of steps required to make sum 0, or print -1 if it's impossible to make the sum 0.
+Constraints
+
+1≤T≤10
+1≤N≤105
+
+Sample Input:
+4
+6
+1 1 1 -1 -1 -1
+5
+-1 -1 1 1 1
+4
+1 1 1 1
+8
+-1 -1 -1 1 -1 1 1 -1  
+Sample Output:
+0
+-1
+2
+1
+EXPLANATION:
+Case #1 : the sum is already 0, so you don't need to perform any step.  
+Case #2 : number of '+1' is 3 and number of '-1' is 2, whatever steps you may perform you cannot make sum equals to 0.  
+Case #3 : number of '+1' is 4 and number of '-1' is 0, so you can replace two '+1' by '-1' in two steps. So, finally there are two '+1' and two '-1' in the array, whose the sum is 0.   
+Case #4 : number of '+1' is 3, and number of '-1' is 5, so after replacing one '-1' by '+1', we will get four '-1' and four '+1', whose sum is 0.  
+

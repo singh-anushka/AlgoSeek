@@ -1,0 +1,51 @@
+
+Today, Ram and friends have come out to play.
+Ram has brought a Frisbee for today's game!    
+Ram has N friends numbered from 1 to N , and they decided to play for X minutes.    
+The game's rules are as follows: 
+
+All players stand in a circle.
+Ram starts the game and passes the frisbee to one (it can be anyone) of his friends.
+Any player who recieves the frisbee is free to pass the frisbee towards any other player immediately (no time gap).
+The frisbee takes 1 minute to go from one player to another (regardless of the distance).
+The game will end after X minutes have completed (the frisbee recieved at the end of the last minute is counted).
+
+They will be happy if before the end of the game , every player has interacted with the other N players at least once.
+Recieving and passing frisbee both count as interactions.
+Ex- If player A passes the frisbee to player B, 
+it can be said that player A has interacted with player B and player B has interacted with player A as well.
+Note: Total number of players is N+1 (including Ram himself).
+Given N and X , you are to print if Ram and friends will be happy or not. 
+
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, two integers N,X. 
+
+
+Output:
+For each testcase, output in a single line "Happy" if they will complete the game before the end else  print "Unhappy" if they won't be able to complete the game before the end.
+
+Constraints
+
+1≤T≤1000
+1≤N≤10000
+1≤X≤109
+
+
+Sample Input:
+2
+2 2
+2 3
+
+Sample Output:
+Unhappy
+Happy
+
+EXPLANATION:
+In the first case there are a total of 3 people and time left is 2 minutes, 
+So it's not possible for every player to interact with the other 2 players.
+In the second case there are a total of 3 people and time left is 3 minutes,
+So it's possible for every player to interact with the other 2 players.
+One possible way is [Ram->1, 1->2, 2->Ram].
+

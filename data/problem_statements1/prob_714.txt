@@ -1,0 +1,50 @@
+
+Once in the Tokyo city Group of Ghouls i.e Goat​ is being hunted by CCG
+ (police of the Tokyo city)  and now the group is hiding in the  x-th division of the city.
+The city contains n divisions which are connected with m bidirectional roads, and Kaneki doesn’t want Goat to get hunted by CCG, whenKaneki comes to know that police from z-th division of the city is heading towards the  x-th division to catch his group, Kaneki was in y-th division of the city. Now “Goat” can only be saved from CCG if Kaneki arrives earlier or at the same time when CCG arrives at x-th division.It is given that for anyone who wants to move from one division to its adjacent division of the Tokyo city it takes 1 hour.
+Touka, wife of Kaneki is away from the city and she is very nervous about all this so she started to calculate the time and predict the results. You are the only friend of Touka and you need to help her by predicting if Kaneki will be able to save the Goat ? 
+If yes then print “Yes” else print “NO” without a quote.
+Input:
+Here you will be given q queries conatining division in which Goat is hiding will be given for eachquery you have to predict the results
+
+Frst line of input you will be given integers n and m ,number of divisions in the Tokyo city 1,2,3...n and number of bidirectional roads in the city respectively
+Next m lines youwill be given an integers u,v indicating that there is a road between division u and division v.
+On the next line you will be given integers  y and z  indicating division of Kaneki and division of CCG respectively.
+After this on the next line you will be given an integer  q, number of queries.
+Next q lines you will be provided by an integer x , location  of  “Goat” .
+
+Output:
+For q queries print the result of each query as “YES” if Kaneki is able to save Goat from CCG or print “NO” if Kaneki is not without quotes on new line.
+Constraints
+
+1≤n,m≤106
+1≤q≤104
+1≤x,y,z≤n
+
+Sample Input:
+6 6
+1 2
+1 5
+2 3
+2 4
+4 5
+4 6
+3 5
+3
+2 
+4
+6
+
+Sample Output:
+YES
+NO 
+NO
+
+EXPLANATION:
+In the above test case Kaneki is located at division 3 and CCG is located at division 5
+In 2nd query​​ ​Goat is located at division 4.
+Kaneki will require 2 hrs to reach the group 3−>2−>4 .
+CCG will require 1hr to reach the group 5−>4.
+So Kaneki will not be able to save the ​​Goat.
+Hence Answer of 2nd query is NO.
+

@@ -1,0 +1,38 @@
+
+Chefu's exams are going on. Due to the pandemic, his school is still closed and all exams are being conducted online. Chefu and his friends have made an group on Signal app to discuss the questions during the exams, taking most of the benefit of this online exams system. Chefu is one of those students who attends all the classes and is every teachers' favorite. Today is Maths exam of Chefu and teacher gave him a hint that "Learn how to find SquareSquare RootRoot of a number ". At the starting of the exam he shared the hint with his friends. All of them are pretty confidant to score good marks as questions related to only square root will be asked.  
+Exam started. Teacher gave them a positive integer A and asked them to find two integers B and C , and return the minimum sum B+C . The conditions to choose B and C are :   
+
+the product of B and C is strictly greater than A. Formally, B∗C>A , and  
+B and C need not to be distinct, they can be same also.   
+sum (B+C) is minimum possible. This sum is the answer . 
+
+Chefu and his friends know that they need to do something with the Square Root of the given number A, but don't know what to do next. Can you help them with the further steps and find the answer for them ?
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow.  
+Each testcase contains of a single line of input, one integer A. 
+
+Output:
+Print one integer, the minimum sum B+C .
+Constraints
+
+1≤T≤100
+1≤A≤105
+
+Sample Input:
+4
+7
+8
+19
+16    
+Sample Output:
+6
+6
+9
+9  
+EXPLANATION:
+Case #1 : possible B and C can be 3,3. Sum is 6. B and C can be also 2,4. But minimum sum B+C is 6 only. You cannot find any other values of B or C such that sum is less than 6 and product is greater than 7.
+Case #2 : in this case also B and C can be 3,3. This will give minimum sum 6.  
+Case #3 : Two numbers whose product is greater than 19 and sum is minimum is 4,5. 
+Case #4 : here B and C can be 4,5. This will give minimum sum 9. 
+

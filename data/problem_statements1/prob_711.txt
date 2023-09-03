@@ -1,0 +1,28 @@
+
+ You are given an undirected graph with N nodes and M edges. Each edge has a cost associated with it and is colored either black or white. You need to find a spanning tree with minimum cost such that for every path in the tree, the color of edges is alternating. The cost of the spanning tree is the sum of cost of edges in it. 
+ Print the minimum cost. 
+Input
+The first line of input contains 2 integers N (2 <= N <= 18) and M (1 <= M <= 306), the number of nodes and the number of edges.
+Each of the next M lines describe an edge. Each line contains three integers U, V, C and a character S(1 <= U, V <= N, 1 <= C <= 10^9) - there is an edge between U and V with cost C. If S equal 'W' then the edge is colored white. Otherwise S equals 'B' and edge is colored black. The graph doesn't have any self loops.
+
+Output
+Output a single integer, the minimum cost of the spanning tree. If no such spanning tree exists then output -1.
+Constraints
+
+2 ≤ N ≤ 18
+1 ≤ M ≤ 306
+1 ≤ U, V ≤ N
+1 ≤ C ≤ 10^9
+
+Example
+Input:
+3 4
+1 2 2 B
+1 2 3 W
+2 3 4 W
+2 3 5 B
+
+Output:
+6
+
+

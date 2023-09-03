@@ -1,0 +1,62 @@
+
+
+
+Luther is a manager working in the firm Mathemagicians Incorporated. He is faced with a task of assigning roles to new employees of the firm:
+
+There are N new employees, numbered 1 to N, and M types of employment roles, numbered 1 to M. Each person must be offered exactly one type of role in the firm.
+
+Different people are suited to different roles: P[i][j] gives the productivity value of the ith person if he works in the jth role in the firm.
+
+However, due to people being employed in different roles, disharmony arises in the firm.
+
+For any two employees i and j, with roles numbered x and y respectively, such that y > x , productivity of the firm decreases by the value D[i][j]*(y - x).
+
+Help Luther assign roles to employees so that productivity of the firm is maximized.
+
+Formally, for all i, if Luther assigns role R[i] to employee i, productivity of the firm is given by:
+
+
+Note: Multiple persons can be assigned to the same type of role.
+
+
+Input
+
+
+The first line contains an integer T , the number of test cases.
+T test cases follow:
+The first line of each test case contains 2 space seperated integers: N and M.
+The next N lines contain M space seperated integers each: jth integer on ith line denotes P[i][j].
+The next N lines contain N space seperated integers each: jth integer on ith line denotes D[i][j], D[i][i] = 0 for all i.
+
+
+Output
+
+Output the answer for each test case on a separate line.
+
+Constraints
+
+1 ≤ T ≤ 5
+1 ≤ N ≤ 30
+1 ≤ M ≤ 30
+0 ≤ P[i][j] ≤ 109
+0 ≤ D[i][j] ≤ 109 , D[i][i] = 0
+
+Example
+Input:
+1
+5 5
+8 7 4 3 2 
+19 17 1 10 1 
+8 2 9 11 8 
+6 14 6 18 11 
+9 3 20 15 5 
+0 0 0 0 1 
+2 0 1 1 2 
+0 0 0 2 0 
+1 0 1 0 2 
+1 0 0 0 0 
+
+Output:
+66
+
+

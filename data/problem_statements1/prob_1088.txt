@@ -1,0 +1,53 @@
+
+ 
+Shivam and Sameer are roommates.Shivam used to do crazy things.He is upset with Sameer because Sameer was absent on his birthday.Shivam has a rope with a finite length "L".He makes an rectangular area around his bed with the rope and ask Sameer to not came into this area . Shivam wants to occupy maximum space help him to find the length and breadth of the rectangle so that it can occupy maximum space.
+Input
+
+The first line contains T i.e. the number of test cases.
+.
+T lines follow, each line containing an integer L,
+
+Output
+Print the length and the width of the rectangle upto two decimal of the maximum area in space seperated form in new line for each testcase .
+Constraints
+1 ≤ T ≤ 10^9
+1 ≤ L ≤ 10^9
+
+ 
+Example
+Input:
+1
+100
+
+Output:
+25.00 25.00
+
+
+Solution#include<stdio.h>
+int main()
+{
+	
+    int t;
+	scanf("%lld ",t);
+	while(t>0)
+	{
+	    int l,a,b;
+	    a=l/4;
+		scanf("%lld ",l);
+		printf("%d %d",a,b);
+	}
+}
+
+
+Steps to be followed
+    1. Read the given description carefully and understand the problem.
+
+    2. Analyze the code given in the problem and find bugs(errors) in these codes..
+
+    3. The given code can be copied and compiled in an online compiler (Eg. ideone.com).
+
+    4. Once the bugs are eliminated from the code, the clean code can be submitted as the solution to the problem..
+
+    5. The solution should be a debugged version of the code provided and must satisfy the test cases to be accepted..
+All the best!!
+

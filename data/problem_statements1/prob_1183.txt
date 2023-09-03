@@ -1,0 +1,31 @@
+
+You are given an array AA of nn integers as input.
+You have to answer q queries.
+In each query, you are given two space-seperated integers, l & r, as input.
+For each query, you have to output "No" (without quotes) in a new line if the sub-array [l,..,r] doesn't contain any integer, with exactly 1 occurrence in that particular sub-array ([l,..r]), otherwise, output "Yes" (without quotes).
+Output:
+For each query, output "No" (without quotes) in a new line if the sub-array [l,..,r] doesn't contain any integer, with exactly 1 occurrence in that particular sub-array ([l,..r]), otherwise, output "Yes" (without quotes).
+Constraints:
+
+1≤n≤105
+0≤A[i]≤105
+1≤q≤105
+1≤l≤r≤n (1-indexing)
+
+Sample Input:
+4
+0 0 3 0
+2
+1 2
+1 4
+
+Sample Output:
+No
+Yes
+
+Explanation:
+
+For query−1, sub-array ([1,..,2]) contains no element with 1 occurrence, hence the answer is "No".
+For query−2, sub-array ([1,..,4]) contains one occurrence of 3, hence the answer is "Yes".
+
+

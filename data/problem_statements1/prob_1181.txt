@@ -1,0 +1,41 @@
+
+You have nn Jenga blocks, with values written on them from 1 to n. There will be exactly 1 block, with value = i (i belongs to range [1,n]).
+You organised the Jenga Blocks in the form of a stack, in increasing order of their values, with the top-most block having value equal to 1 and the bottom-most block having value equal to n.
+Your one friend is gonna play with you. In every turn of this Modified Jenga Game, your friend will select a unique block with value equal to x, and your friend will note down the number of blocks placed above the block, with value x, after that, you will remove that block from the stack in such a way that the stack remains intact and will put it on the top. 
+You will play this game for q turns. 
+Unfortunately, your friend lost the notes, he was noting down.
+But, since you know the value of x, for each of the q turns, please make the notes again to help him.
+Input:
+
+First line will contain n, the number of Jenga Blocks you have.
+Second line will an integer q, the number of turns.
+Next q lines will contain an integer x, which was selected by your friend in each turn.
+
+Output:
+Output the notes of your friend, in the form of q space-seperated integers each denoting the number of blocks above the block numbered x, before its moved by you.
+Constraints:
+
+1≤n≤100000
+1≤q≤100000
+1≤x≤n
+
+Sample Input:
+8
+2
+7 
+7 
+
+Sample Output:
+6 0
+
+Explanation:
+
+Initial Stack: (Top) 1 2 3 4 5 6 7 8 (Bottom)
+1st move of your friend: Your friend will write 6 in his notes, because there are 6 blocks placed above 7.
+Your 1st Move: You move block with value = 7 to top.
+Stack (After Whole 1st move): (Top) 7 1 2 3 4 5 6 8 (Bottom)
+2nd move of your friend: Your friend will write 0 in his notes, because there are 0 block(s) placed above 7.
+Your 2nd Move: You move block with value = 7 to top.
+Stack (After Whole 2nd move): (Top) 7 1 2 3 4 5 6 8 (Bottom)
+
+

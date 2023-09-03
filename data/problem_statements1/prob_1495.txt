@@ -1,0 +1,33 @@
+
+A lot of guests have suddenly shown up at your house and you only have xx litres of cold water (at y°) at the moment. Due to fear of Covid, each guest brings their own bottle, each of which already has Mi litres of water at Ci°. Each of these bottles has infinite capacity.
+If you add cool water to the ith bottle, the temperature changes according to the formula Tfinal=(Mi∗Ci+K∗y)(Mi+K) where K is the amount of cool water you added. 
+You wish to maximise the number of containers that have a temperature ≤Q.
+Note: It is guaranteed that Q>y.
+Input:
+
+The first line contains T, the number of test cases.
+The first line of each test case contains four space separated integers - x, y, Q and n - the amount of cold water you have, the temperature of the 'cold water', the target temperature and the number of bottles.
+The next n lines of each test case contain two space separated integers - Mi and Ci - the amount of water and its temperature, in the ith bottle.
+
+Output:
+Print the maximum number of bottles whose temperature can be ≤Q.
+Constraints
+
+1≤T≤20
+0≤y,Ci,Q≤100
+0≤x,Mi≤1000
+1≤n≤1000
+
+Sample Input:
+1
+500 1 15 5
+50 50
+500 30
+80 20
+100 10
+30 15
+
+Sample Output:
+4
+
+

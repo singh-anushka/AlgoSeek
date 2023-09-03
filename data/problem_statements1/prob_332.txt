@@ -1,0 +1,47 @@
+
+PROBLEM STATEMENT
+Apaji festival is celebrated in Banasthali University with great zeal and enthusiasm, but the DEMONETISATION has lead to major crash in the business of the stalls. Students are facing difficulty in submitting the money in the bank and after receiving the new currency it is indeed a huge trouble for them to get it exchanged.
+But the department sorted out the problem by importing cash for the convenience of students. They made the cash available in the account section of the University. Also, some staff members from the account section were appointed to do the same.
+In the capacity of approximately 16,000 girls, it is a tough task to solve problem for each one of them. A student may exchange money for more than one time, but the basic motive of the department is to cover up maximum number of students in minimum time.
+Thus, it was decided that minimum number of notes and coins will be exchanged for every student. At the same time, they also have to compute the number of notes and coins collectively exchanged by them in that particular day. Because of this being such a difficult task, they seek your help. 
+INPUT
+The first line contains 't'-number of test cases. The next lines contain 'n'-number of students for that day followed by a[i]-their respective amounts to be exchanged.
+Take in consideration that there are coins of 1,2,3,5 and notes of 10,20,50 and 100.
+OUTPUT
+Print the total number of notes and coins which have been exchanged that day.
+CONSTRAINTS
+1<=t<=50
+1<=n<=10^5
+1<=a[i]=10^6
+SAMPLE INPUT
+2
+3
+100 700 890
+3
+23 34 22
+
+SAMPLE OUTPUT
+19
+8
+EXPLANATION
+For : case 1
+100: 1 note of 100
+700: 7 notes of 100 each
+890: 8 notes of 100 each
+     1 note of 50 
+     2 note of 20
+    
+Total no. of notes/coins = (1) + (7) + (8+2+1)
+			 = 19
+For:case 2
+23: 1 note of 20
+1 coin of 3
+ 34:1 note of 20
+1 note of 10
+2 coins of 2
+22; 1 note of 20
+1 coin of 2
+=(1+1)+(1+1+2)+(1+1)
+=8
+
+

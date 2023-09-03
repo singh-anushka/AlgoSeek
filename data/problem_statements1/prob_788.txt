@@ -1,0 +1,59 @@
+
+
+  Mr. Yagami is playing a game of arrays. He is given two random arrays A and B
+  consisting of N positive integer elements. Game starts by Mr. Yagami assigning 0 or 1
+  to each element in A and B.
+After this assignment is done, a graph is constructed with a node for each
+  element in the array A and B (2N nodes) and no edges. The game proceeds with a
+  valid move being defined in the following way:
+
+  One of the arrays from A or B is selected.
+  From the selected array, an element which has been marked 0 is chosen. Let us
+  call this element as X.
+ A set of elements, Y, are chosen from the array, which was not chosen in the
+  first step, such that all elements of Y should be marked as 1 and all elements
+  of Y should be greater than X and no element of Y should be coprime to X.
+Finally an edge is drawn from the node labelled X to all the nodes
+  corresponding to the elements in set Y. There can only be a single edge
+  between any 2 nodes in the graph.
+
+  He can make as many valid moves. Mr. Yagami receives 1 point for each edge
+  that is drawn in the graph.
+  Mr. Yagami is very clever, so he makes the initial assignment in such a way
+  that it maximizes the number of points he receives in the game. You have to
+  return the maximum number of points that Mr. Yagami can receive.
+  
+Input Format:
+
+  The first line of the input contains a single integer, N (1 ≤ N ≤
+  40)
+  The second line of input contains N integers separated by a single space
+  character, which represent the elements of the array A. (2 ≤ A[i] ≤  10^9)
+  Similarly, the last line of input also contains N integers separated by a
+  single space character, which represent the elements of the array B. (2 ≤ 
+  B[i] ≤ 10^9)
+
+Output Format:
+
+  A single integer representing the maximum score which Mr. Yagami can receive.
+  
+Sample Input:
+4
+16 3 2 9
+12 18 13 4
+Sample Output:
+8
+Explanation:
+
+  He picks 2 from first array. So he gets to put 3 edges ie. 2->4, 2->12,
+  2->18.	
+  Next he picks 3 from the first array. So he gets to put 2 edges ie. 3->12,
+  3->18.
+  Next he picks 9 from the first array. So he gets to put 2 edges ie. 9->12,
+  9->18.
+  Next he picks 16 from the first array. So he gets to put 1 edge ie. 16->18.
+  Total edges=8.
+
+
+Problem Setter: Lalit Kundu
+

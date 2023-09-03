@@ -1,0 +1,29 @@
+
+Chef went to the supermarket to buy some candies and saw an exciting offer. The offer said buy $N$ candies and get $M$ candies absolutely free.
+Chef wants at least $K$ candies in total but will spend as little money as he can. Help Chef calculate the minimum no. of candies he needs to buy to get a total of at least $K$ candies. 
+Input:
+
+First line will contain $T$, number of test cases. Then the test cases follow. 
+Each test case contains a single line of input, three integers $N, M ,K$. 
+
+Output:
+Print the minimum no. of candies Chef needs to buy to get at least K candies in total.
+Constraints
+
+$1 \leq T \leq 10$
+$1 \leq  M \leq N \leq K \leq 10^9$
+
+Sample Input:
+2
+4 2 10
+5 2 20
+
+Sample Output:
+8
+
+15
+EXPLANATION:
+It is given that Chef wants to buy 10 candies in total and the offer says buy 4 get 2 free.
+that means Chef has to buy 8 candies and he will get 4 candies for free. So Chef
+needs to buy 8 candies to have at least 10 candies in total. Note that buying 7 candies will get him a total of 9 candies.
+

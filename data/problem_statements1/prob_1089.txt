@@ -1,0 +1,49 @@
+
+Jethalal is traveling from City AA to City BB for his Business meeting. 
+And while onboarding the train, he gets a call from his closest friend Mehta and came to know that Mehta was travelling from City CC to City DD.
+And they decided to meet each other at the station that is common between their respective train's route.
+Imagine the route of the train as a cartesian-co-ordinate system. Your task is to determine whether they can meet or not.
+
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+
+The 1st line contains coordinates of city A separated by space - AxAx AyAy
+The 2nd line contains coordinates of city B separated by space - Bx By
+The 3rd line contains coordinates of city C separated by space - Cx Cy
+The 4th line contains coordinates of city D separated by space - Dx Dy
+
+The source and destination of journey are distinct and does not lie on same route.
+
+Output:
+For each testcase, output in a single line "YES" if they can meet, otherwise "NO" (without quotes).
+
+Constraints
+
+1≤T≤106
+−106≤Ax,Ay,Bx,By,Cx,Cy,Dx,Dy≤106
+
+
+Sample Input:
+2
+5 -1
+8 7
+0 0
+10 3
+3 5
+0 2
+2 0
+7 5
+
+
+Sample Output:
+YES
+NO
+
+
+EXPLANATION:
+Test case 1: Jethalal and Mehta can meet at point E.
+
+Test case 2: Jethalal and Mehta can not meet.
+
+

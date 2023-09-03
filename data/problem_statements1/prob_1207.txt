@@ -1,0 +1,40 @@
+
+Given a positive integer AA, find the total number of ordered pairs (B,C)(B,C) such that A+B2C is any perfect square, where B and C are positive integers ranging between 1 to 105.
+
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each test case contains a single number A.
+
+
+Output:
+For each testcase, output in a single line answer i.e. total number of ordered pairs.
+
+Constraints
+1≤T,A≤105
+
+Subtasks
+Subtask #1 (20 points) 
+
+1≤T≤10,
+1≤A≤103
+
+ Subtask #2 (80 points)
+Original Constraints
+
+Sample Input:
+1
+
+7
+Sample Output:
+1
+
+
+EXPLANATION:
+A=7
+Possible pairs  (B,C) are (3,1)
+
+7+32=16.
+
+Only above pair is able to produce perfect square number i.e. 16 perfect square of 4. Thus answer is 1.
+

@@ -1,0 +1,29 @@
+
+You have been given an integer N.
+An array(arr) is said to be good if its array value is found equal to N.
+Array value =  ∑f(arr[i])
+Here, f(x) is equal to number of integers k (1≤k≤x)  which gives GCD(k,x)=1
+Print the good array to solve this task.
+Note that  elements of array should be less than or equal to 1000000  (and greater than 0)  and should be unique
+In case of multiple possible answers, you can output any of them.
+Input:
+
+It contains of a single integer N. 
+
+Output:
+In the first-line print size of the array or −1 in the case answer not exist.
+In the second line print the goodarray if the answer exists.
+Constraints
+
+1≤N≤2∗105
+
+Sample Input:
+6
+
+Sample Output:
+2
+3 8
+
+EXPLANATION:
+f(3) + f(8)  = 2 + 4 = 6
+

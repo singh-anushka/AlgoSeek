@@ -1,0 +1,34 @@
+
+Steve is in a fight with Hydra. He has n gun shots. He has to kill the enemy in order to rule their territory. But, he can only fire 1 or 2 shots at each move. He also wants the number of moves to be a multiple of an integer k otherwise the gun will explode.
+Help Steve to find the minimal number of moves to win the battle against Hydra by following the conditions given.
+
+Input:
+First line contains T, number of testcases. Then the testcases follow.
+Each testcase contains two space separated integers n, k.
+
+*Note: Input file can be empty*
+
+Output:
+For each testcase, output an integer i.e. minimal number of moves being a multiple of kk. If there is no way he can win the battle by following the condition, print  -1-1.
+
+Constraints
+1 \leq T \leq 10^3
+1 \leq n \leq 10^4
+1 \leq k \leq 10
+
+Subtasks
+Subtask #1(100 points): Original Constraints
+
+Sample Input:
+2
+10 2
+3 5
+
+Sample Output:
+6
+-1
+
+EXPLANATION:
+For the first case, Steve could win the battle in 6 moves with following sequence of steps: {2, 2, 2, 2, 1, 1}. 
+For the second test, there are only three valid sequence of steps {2, 1}, {1, 2}, {1, 1, 1} with 2, 2, and 3 steps respectively. All these numbers are not multiples of 5.
+

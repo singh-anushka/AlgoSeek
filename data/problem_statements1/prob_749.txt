@@ -1,0 +1,59 @@
+
+Harry & Ron used to be good friends until they got a map of a treasure. Harry being a greedy and opportunist thought to acclaim the treasure alone. Ron came to know about his intentions and they had a fight and amidst the fight , the map got torn into pieces.
+Now, since none of them would ever get to the treasure until they compromise, so both of them settled the differences in between.Now, in order to get the treasure, they have to consolidate the pieces together, so that they get back the original map.So help them to find the correct map.
+Input
+
+First line of input contains an integer A.
+
+      Which denotes the number of edges in the in first graph.
+
+Next A lines contains two integer 'a1', 'b1' .
+
+      Which defines the bidirectional relationship in graph 'A'.
+
+( A + 2 ) th contains an intiger B .
+
+      Which denotes the number of edges in the in second graph.
+
+Next B lines contains two integetr 'a2', 'b2' .
+
+      Which defines the bidirectional relationship in graph 'B'.
+
+
+ 
+Output
+
+      Output a single line containing 'YES' or 'NO'
+      if both the graphs are Similar or Not respectively .
+
+Constraints
+
+1 ≤ A + B ≤ 7*105
+1 ≤ a,b ≤  103 
+
+Subtasks
+Subtask #1 (50 points):
+1 ≤ A + B ≤ 103
+Subtask #2 (50 points): original constraints
+Example
+Input:
+5
+1 2
+4 3
+3 2
+4 5
+5 3
+5
+3 1
+1 2
+4 5
+4 3
+3 2
+
+Output:
+NO
+
+ 
+Explanation
+
+

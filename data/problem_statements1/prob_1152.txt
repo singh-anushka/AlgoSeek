@@ -1,0 +1,33 @@
+
+So after all those donations and stuff our chef became popular. Due to his popularity he started making a lot of friends soon he ended up getting a lot of marriage proposals he finally decided to marry . He ended up scheduling his marriage and invited a lot of guests(N in number).
+However as you know that the  pandemic is going on so the dinner party has some guidelines to be followed as per the prevailing pandemic norms for parties.
+The norms suggests that the people being seated have to be seated on alternate seats that is if a person is seated on (chair no. 2 no one should be seated on chair no. 1&3).
+Chef also has a few VIP guests (K in number), the vip guests have their own demand of the chairs on which they want to be seated at. However that will be according to covid norms.
+Your task is to help chef seat the rest of his guests and find the last chair number where a guest has been seated so that the guests are sitting as closely as possible so that no guests end up feeling lonely.
+Constraints:
+1<=T<=10
+1<=N<=10^9
+1<=K<=10
+1<=Ki<=10^9                                                                                 
+Input:
+The first line of input contains an integer T the number of testcases T pair of lines follow.
+The next line of input will have two numbers N and K where N is the total number of guests and k is the number of vip guests.
+The next line will contain K numbers the chair numbers where the vip guest wants to be seated.
+Output:
+A single number giving the last chair number on which a guest is seated.
+Example 1:
+Input
+2
+5 3
+3 6 9
+20 5
+1 10 19 35 39
+Output
+11
+41
+Explanation:
+In example 1 we have total 5 guests out of which 3 are vip with seats 3,6,9 so we have two normal guests to be seated. We book one guest for seat 1 and the other for seat 11.
+              1        3                6                9          11
+Last guest is at 11 so that’s our output.
+We cant book our guest at seat 4 because of a  guest at seat 3 and neither at 5 because of a guest at seat 6.
+

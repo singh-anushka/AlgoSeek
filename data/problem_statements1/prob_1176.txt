@@ -1,0 +1,36 @@
+
+DSC Club in our college is looking for a core team member who has basic knowledge of competitive programming. For that existing team created a contest and the ranks were released after the contest.
+You're given ranks of NN people with their namesnames. your   task is to select only N/2 people based on their ranks   and display their names in the ascending order of their ranks 
+In case if N is odd consider the floor(rounds downs the nearest integer) of N/2
+The rank of N students can be anything may/may  not be  in the range 
+1≤R(i)≤N
+Input:
+
+The first line contains the value of N.
+Second contain N ranks. 
+3rd line contain respective  names. 
+
+Output:
+
+Print the names of selected  people  each in a single line.
+
+Constraints:
+
+1≤N≤200
+1≤N(i)≤1000
+
+Sample Input:
+4
+1 3 4 2
+Abhilash
+akhil
+vineeth
+vijay
+
+Sample Output:
+Abhilash
+vijay
+
+EXPLANATION:
+Here among 4 students ranks 1 and 2 were leading.Hence they were selected and printed based on  order  of their ranks . 
+

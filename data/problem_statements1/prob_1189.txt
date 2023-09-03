@@ -1,0 +1,50 @@
+
+It's the era of Great Depression and there is a crisis of bread in the  entire world.  Fortunately, Chef has found some boxes lying ahead of him in 'The Great Mall' and he needs to  take the bread from any of the box to satisfy his needs. Assume the mall as a 2D grid of infinite length and breadth. Chef needs to reach any of the box in minimum time to get at least one bread, else some other person will take away all of the breads. The configuration of boxes is described below  
+
+All the boxes are lying side by side on a straight line only.
+There are infinite number of boxes lying on this line.
+Each box will contain at least one bread.  
+
+Given the position of chef and coordinates of some (at least two) random boxes from this infinite number of boxes, find minimum time in which he can get at least one bread for him.
+You only need to find the time required to reach any of the box. Time in picking up the bread can be thought of as an instantaneous process.   
+Chef runs with a constant speed of 1 unit.
+Assume Chef and boxes as point masses.   
+Note:
+
+Please use double data type in languages like C,C++ and Java for intermediate floating point calculations and floating division in case of Python source code. 
+Please use appropriate data type to avoid integer overflow.
+
+Output your answer by passing it into greatest integer function.
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+First line of each test case contains three integers N, a, b - The number of boxes and (x,y) coordinates  respectively of chef initially. 
+Then N lines follow. Each line will contain coordinates  x,y of each box.
+
+Output:
+For each testcase, output minimum time required to get the bread.
+Constraints
+
+1≤T≤5
+2≤n≤5
+0≤x,y≤109
+0≤a,b≤109
+
+Sample Input:
+2
+2 12 1
+1 3
+6 18
+2 132 441
+1 9
+6 54    
+Sample Output:
+11
+82
+EXPLANATION:
+Case #1: Chef can choose the below shortest path to pick at least one bread.
+(a1,b1) and (a2,b2) are coordinates of two random boxes.
+(x,y) are initial coordinates of chef.
+
+
+

@@ -1,0 +1,24 @@
+
+Two players ‘A’ and ‘B’ are playing a game. They were given N number of coins where ‘N’ is even and they will get alternative turns in which player can select a coin from one of the end. The winner is the player with maximum amount of sum. At what position first or second does player ‘A’ need to start the game in order to win the game and how much ‘A’ can collect starting at that position.
+ 
+Input
+First line N
+Second line ‘N’ numbers separated by spaces.
+Output
+First line contains at what position ‘A’ should start and second line contains the maximum amount earned by starting at that position
+Constraints
+
+2 ≤ N ≤ 100
+
+ 
+Example 1
+Input:
+48 15 2 7
+ 
+Output:
+1 22
+ 
+Explanation
+Example case 1: Player 1 starts by picking 7,then player 2 by picking 8
+and then player 1 by choosing 15 which makes total 22 and for player 2 total 10
+

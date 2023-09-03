@@ -1,0 +1,39 @@
+
+There are n athletes in a row numbered 1 to n from left to right waiting to receive medals from Mr chef for their outstanding performance. Each one of the athletes is either facing left or right. When an athlete receives the medal, all the other athletes that can see the current athlete, increase their respect for Mr chef by  1. An athlete that faces left sees all the athletes with lower indices than his index irrespective of the direction they face, and an athlete facing right sees all the athletes with higher indices than his index irrespective of the direction they face.
+An athlete who has received the medal becomes uninterested and will not gain any respect for Mr chef after receiving the medal.
+Mr chef can present medals to the athletes in any order. All the athletes will receive the medal once.  
+Note: An athlete can gain respect for Mr chef multiple times.  
+Find out the difference between the maximum possible sum of respect that can be gained and the minimum possible sum of respect that can be gained for Mr chef.
+Input:
+
+First-line will contain T, the number of test cases. Then the test cases follow.
+The first line of each test case contains a single integer n.
+The second line of each test case contains a string of length 
+n consisting of either ‘ L’ or ‘R’ where :
+L:  The athlete is facing left
+R:  The athlete is facing right   
+
+Output:
+For each test case, print a single line containing one integer ―the difference between the maximum possible sum of respect that can be gained and the minimum possible sum of respect that can be gained for Mr chef.
+Constraints
+
+1≤T≤1000
+1≤n≤104
+
+Sample Input:
+1
+3
+LRR
+Sample Output:
+1
+Sample Explanation:
+The minimum possible respect that can be gained by Mr Chef:  
+
+We award the athletes in the following order 1 2 3 which gives the total value of respect as 0.   
+
+The maximum possible respect that can be gained by Mr Chef :  
+
+We award the athletes in the following order 3 2 1   which gives the total value of respect as 1.
+Hence, the answer is 1 
+
+

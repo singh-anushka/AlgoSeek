@@ -1,0 +1,58 @@
+
+A chess championship is going to be organized at NIT Jamshedpur. Huge number of participants are ready to outsmart individuals in this interesting game.
+Sanjeev, being the current Chess Champion is the organizer of this year's championship matches. He expects that this year also the Gold Medal should be grabbed by a student of his branch in the college.
+For this to happen, he has made an arrangement of m practice matches for the n competitors of his branch.
+To simplify things consider there are only 2 types of players/competitors - smart and dull.
+A game is called boring if it is played between two dull players, otherwise the game is interesting.
+Sanjeev added a twist in this game. He called another n people who are friends of the above mentioned n players where each player has exactly one friend. It is interesting to observe that if a player is smart, then his/her friend is dull. The same reverse behaviour holds for a dull player also.
+Since Sanjeev is a fun loving person, so he wants to make all these matches look interesting. But he doesn't know which player is smart or dull. Can you help him ?
+
+Note: The friend of ith player is (i+n)th player where 1 ≤ i ≤ n.
+
+Input
+First line consists of t - the number of test cases. Each test case goes as follows -
+
+First line consists of n and m, the number of players and total number of practice matches respectively.
+Each of the next m lines contains 2 space-separated integers for e.g. "a b" (without quotes) which denote a practice match or a game played between a and b.
+
+Note:- Here a can be a player or his/her friend. Also, b can be a player or his/her friend. Both a and b cannot be same. Each pair plays atmost one of m games.
+
+Output
+For each test case output the following in each line -
+
+
+Print "boring"(without quotes) if all the m practice matches cannot be made interesting, 
+else print "interesting"(without quotes).
+Constraints
+
+1 ≤ t ≤  50 
+2 ≤ n ≤  100000 
+1 ≤ m ≤  100000 
+1 ≤ a, b ≤  2*n 
+
+Example
+Input:
+2
+2 6
+3 1
+1 4
+2 4
+2 3
+4 3
+2 1
+4 4
+1 3
+2 4
+5 7
+6 8
+
+Output:
+boring
+interesting
+
+
+Explanation
+Example case 2.
+One possible way for making all 4 games interesting is by considering player 1 and player 4 as smart, and player 2 and player 3 as dull
+
+

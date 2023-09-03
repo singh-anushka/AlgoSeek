@@ -1,0 +1,55 @@
+
+It's time for the annual Tug of War tournament in the city of Simalokolo!
+And the Mayor of the city , Mr.Ram , was bored of seeing the long tournament every year!
+So he decided that this year instead of the whole tournament , only one match will be conducted !
+And he also has decided some strange rules for the match !
+The rules are as follows:
+
+Every citizen of the city has to participate in the match!
+For every pair of citizen A and B , if A and B hold a grudge against each other then they won't be in the same team.
+
+The city of Simalokolo has N citizens numbered from 1 to N.
+And each citizen holds a grudge against 0 or more people.
+Obviously, no citizen holds a grudge against himself/herself!    
+You are given the data about the citizens and the grudges.
+Find out if organizing the match is possible or not !
+
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow.
+The first line of each test case will have N , number of citizens in the city and K , the number of grudges.
+The next K lines will have two integers A and B , denoting A and B hold grudge against each other.
+It is guarenteed that the K pairs are distinct , i.e , for any two pairs P1 and P2 , it is guarenteed that (P1A,P1B)≠(P2A,P2B) and (P1A,P1B)≠(P2B,P2A).
+
+
+Output:
+For each testcase, output in a single line 'possible' if organizing the match is possible or 'impossible' if there's no way to organize the match according to the rules set by the Mayor.
+
+Constraints
+
+1≤T≤1000
+2≤N≤105
+1≤A,B≤N
+0≤K≤min(105,N∗(N−1)/2)
+The sum of N over all test cases doesn't exceed 105.
+The sum of K over all test cases doesn't exceed 105.
+
+
+Sample Input:
+2
+3 2
+1 2
+1 3
+3 3
+1 2
+1 3
+2 3
+
+Sample Output:
+possible
+impossible
+
+EXPLANATION:
+In the first case, we can put citizen 2 and 3 in one team and citizen 1 in the other team.
+In the second case , there is no way to put all of them in separate teams such that no team will have two members who hold grudge against each other.
+

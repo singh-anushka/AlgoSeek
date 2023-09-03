@@ -1,0 +1,46 @@
+
+Madhu and Prithvi are two friends. They started playing a dice game. It's Madhu's turn. Given nn the number of times dice thrown by both the persons  subsequently one after the another. The person should reduce nn with the number obtained and update n. Given the number obtained at each turn. The first person who gets a negative number will loose and other will win. Print the name of winner in lower case.
+Input Format
+
+First line will contain n, number of dice was thrown.  
+Each throw/turn contains of a single line of input x denoting the number obtained.
+
+Output Format
+For each testcase, output madhu if he wins else print prithvi if none gets a negative number print 0.
+Constraints
+
+1≤n≤10
+1≤x≤6
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+5
+1
+2
+3
+4
+5
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+prithvi
+
+
+Explanation
+5-1=4(Madhu's turn)
+4-2=2(Prithvi 's turn)
+2-3=-1(Madhu's turn)
+

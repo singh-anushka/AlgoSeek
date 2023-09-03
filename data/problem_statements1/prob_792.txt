@@ -1,0 +1,37 @@
+
+The title of the problem has nothing to do with the problem. You are given an integer N and an array C of positive integers of size N.Is there a weighted graph with positive integer weights on N vertices such that sum of weights of edges adjacent to vertex i is C[i] and weight of edge between i and j is at most i bitwise-xor j
+Input
+ First line contains T, the number of test cases. Each test case consists of 2 lines. First Line contains N, the number of nodes in the graph.
+Next line contains N integers, denoting array C
+
+Output
+output on a single line "Yes" if such a graph exists,"No" otherwise. 
+Constraints
+
+2 ≤ T ≤ 5
+2 ≤ N ≤ 100
+1 ≤ C[i] ≤ 10^5
+
+ 
+Example
+Input1:
+1
+2
+2 2
+Input2:
+1
+3
+2 3 2
+
+Output1:
+Yes
+
+Output2:
+No
+
+
+ 
+Explanation
+Example case 1. We have a single edge of weight 2 between 1 and 2
+Example case 2. No graph is possible
+

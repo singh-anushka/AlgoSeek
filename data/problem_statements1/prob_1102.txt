@@ -1,0 +1,33 @@
+
+People in Foodia love apples. They are also very generous. Due to a famine, they now have only a limited supply of apples. Each person has an amount of apples, of which he eats one apple per day. As the people are very generous, they give apples to those in need. If a person runs out of apples, he can receive one apple from anyone on that day. If a person runs out of apples and no one can give him an apple, then that person starves to death. Find the day on which the last person dies. 
+Input
+
+First line has T, the number of test cases. T test cases follow.
+First line of each test case has N, the population of Foodia.
+Second line of each test case has an array of N integers applei, the amount of apple each person has.
+
+Output
+For each test case, print one line that denotes the day on which the last person dies. 
+Constraints
+
+1 ≤ T ≤ 10
+0 ≤ N ≤ 100
+0 ≤ applei ≤ 1000
+
+Example
+Input:
+2
+4
+2 1 1 4
+3
+4 0 0
+
+Output:
+2
+2
+
+ 
+Explanation
+Example case 1. On each day, each person eats one apple. On the first day (2 1 1 4) becomes (1 0 0 3) but the person with 3 apples shares with others so (1 0 0 3) becomes (1 1 1 1). On the second day (1 1 1 1) becomes (0 0 0 0) and everyone dies on second day.
+Example case 2. On the first day the person with 4 apples shares with others so (4 0 0) becomes (2 1 1) and by the end of the day it becomes (1 0 0) and 2 people die. On second day (1 0 0) becomes (0 0 0) and the last person dies on second day.
+

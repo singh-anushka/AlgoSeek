@@ -1,0 +1,36 @@
+
+
+In the first year Akar wanted to make as many friends as possible. So, He used this strategy for sitting in the class everyday. He sits in such a way so that every day his adjacent persons are different. Now everyone in the class wants to follow this strategy and make as many friends as possible. For how many days they will be able to sit in this way? In DA we know we have big LT but here assume we have only one row and everyone sits in one row. 
+There are N students in the class. Note that the number N is in Binary, not in Decimal. Answer is nothing but total number of days you can get different sequence of students such that no two students sit adjacent to each other who were already adjacent to each other in any of the previous days. Since the answer could be very large, print your answer modulo 10^9+7.
+
+Input
+
+First line contains T, the number of test cases.
+Each next T lines contains string S. S contains character '1' and '0' only. This string S is nothing but a representation of number of students N in Binary.
+
+Output
+
+Print required answer modulo 10^9+7 stated in the problem in Decimal not in Binary. Print your answer in new line.
+
+Constraints
+
+1 <= T <= 10
+1 <= |S| <= 100000
+The first character of string S is always '1'.
+
+Example
+Input:
+2
+11
+101
+
+Output:
+1
+2
+
+Explanation
+
+For first test case required sequence is (1,2,3) where 1,2 and 3 denotes the ID of student.
+For second test case required sequence is (1,2,3,4) and (3,1,4,2).
+
+

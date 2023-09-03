@@ -1,0 +1,39 @@
+
+Bob has taken a contract to complete two walls w1 and w2. Since, previous builder left the walls incomplete, bob needs the complete the walls. Formally, the two walls will be having height w1 and w2 before Bob starts the work.   
+The height of a wall increases by one unit with each brick kept on top of this wall. 
+Bob has k number of bricks with him and he needs to spend all of these bricks in building both the walls such that height w1 is strictly greater than w2. If he satisfies above condition, his job is completed.
+Count the number of possibilities such that he completes his job.
+Please note that it's Not mandatory for Bob to keep bricks on both the walls. He can also keep all the bricks on alternative wall leaving one of them of initial height. You only need to tell the number of possibilities such that :-
+
+All bricks are used, and w1 > w2 
+
+Have a look at the sample test cases for more clarification.  :)
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each testcase contains three integers w1, w2,  and k, the initial height of respective walls and the number of bricks, Bob has.  
+the sum of N over all test cases does not exceed 108.
+
+Output:
+For each testcase, output an integer denoting number of possibilities such that Bob completes his job
+Constraints
+
+1≤T≤10
+1≤w1≤108
+1≤w2≤108
+0≤k≤108
+
+Sample Input:
+3
+5 3 4
+2 1 0
+3 5 5
+Sample Output:
+3
+1
+2
+EXPLANATION:
+Case #1 :  In the first test case, the number of possibilities are (7,5), (9,3) and (8,4).  
+Case #2 : Here, since k=0, so number of possibility is only (2,1).  
+Case #3 :  Here, the number of possibilities are (8,5), (7,6). you cannot make any other combination by using all bricks and with w1 > w2.  
+

@@ -1,0 +1,32 @@
+
+ 
+Mr. Swegwan loves to write problems, even though he can't solve all of them. He has given one such problem to his disciple Cherez. He wants Cherez to find the number of strings of length N composed of K alphabets (SwegScript can have any number of alphabets) such that every substring of length exactly equal to M is a palindrome. Since Cherez is not able to solve any of Mr. Swegwan's problems he asks fellow Swegman Paggy for help but Paggy is busy with Android as usual so you have to solve it for him otherwise he will have to face Mr. Swegwan's wrath.
+ 
+Input
+First line of input contains T, the number of test cases.
+Each of the next t lines contains 3 space separated integers N, K, M.
+ 
+Output
+For each test case print a single integer, the number of strings modulo (109+7). If you cannot find any substring of length M in a string of length N, print "Sweg"(without quotes).
+ 
+Constraints
+
+1 ≤ T ≤ 5000
+1 ≤ N, K, M ≤ 1018
+
+ 
+Example
+Input:
+2
+1 1 1
+5 2 4
+
+Output:
+1
+2
+
+ 
+Explanation
+In the first case only one string is valid: "a" (if we denote the only letter of our alphabet as "a").
+In the second case the valid strings are: "aaaaa" and "bbbbb" (if we denote the alphabet letters as "a" and "b").
+

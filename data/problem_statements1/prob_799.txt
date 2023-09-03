@@ -1,0 +1,40 @@
+
+You are provided four points pp on xx-axis, q on y-axis, r(min - value on x-axis) and s(min - value on y-axis). Initially, p≥r and q≥s. You can perform the following operation less than or equal to n times:
+Select either p or q and reduce it by 1. Where point p cannot become less than r, and point q cannot become less than s.
+Find the minimum possible area under p,q(p⋅q) you can cover by applying the given operation less than or equal to n times.
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+The only line of the test case contains 5 integer points p,q,r,s and n.
+
+Output:
+
+For each test case, print one integer: the minimum possible area under p and q(p⋅q) you can cover by applying the given operation less than or equal to n times.
+
+Constraints
+
+1≤T≤2⋅104
+1≤p,q,r,s,n≤109
+p≥r and q≥s
+
+Sample Input:
+    4
+    10 11 2 1 5
+    10 10 8 5 3
+    12 8 8 7 2
+    10 11 9 1 10
+
+Sample Output:
+    55
+    70
+    77
+    10
+
+EXPLANATION:
+
+In the first test case, if you reduce p five times then only obtain 5⋅11=55.
+In the second test case, if you reduce q three times then only obtain 10⋅7=70.
+In the third test case, if you reduce b one time and q one time then only obtain 11⋅7=77.
+In the fourth test case, if you reduce q ten times then only obtain 10⋅1=10.
+
+

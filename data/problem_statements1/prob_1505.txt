@@ -1,0 +1,49 @@
+
+Chef is giving his English exam. Everyone is not good at everything and neither is Chef.
+Bored of not knowing anything in his exam, Chef decides to play a game to entertain himself.
+Chef takes N words from his exam and separates them in groups of exactly K words each. There is only one condition, no two words from the same group can start with the same letter. 
+Chef is enjoying making various groups and is curious to find the maximum number
+of groups that can be formed using N words. Help Chef to find this number.
+Input:
+
+First line will consist of two integers N and K.
+N lines follow, each containing a string Si consisting of uppercase letters .
+
+Output:
+Print a single integer containing the maximum number of groups that can be formed.
+Constraints
+
+1≤N≤106
+1≤K≤103
+1≤Si≤103
+
+Sample input:
+9 3  
+APPLE  
+ANT  
+ALPHABET  
+BLOCK  
+BULL  
+BOSS  
+CAT  
+DOLL  
+EGG  
+
+Sample Output:
+3
+
+Sample input:
+3 2  
+CAR  
+CAT  
+CLOTHES  
+
+Sample Output:
+0
+
+EXPLANATION:
+
+For the first input, 3 groups of size 3 can be made. One such division is {APPLE, BLOCK, CAT}, {EGG, ANT, BULL}, {BOSS, DOLL, ALPHABET}.
+For the second input, no group of size 2 can be formed such that no two strings start with same letter.
+
+

@@ -1,0 +1,34 @@
+
+Chef in association with Netaji Subhash Engineering College , decided to conduct a coding contest CODE-O-WAR for its students , to overcome the boredom during the Quarantine .
+There are NN students in the college. The number of students is even. The ithith student has programming skill equal to Ai.
+Chef wants to form N/2 teams with certain restrictions which goes as :
+
+Each team should consist of exactly two students, and each student should belong to exactly one team.
+Two students can form a team only if their skills are equal .
+
+Students can solve problems to increase their skill. One solved problem increases the skill by one.
+Chef wants to know the minimum total number of problems students should solve to form exactly N/2 teams (i.e. each pair of students should form a team). Your task is to help Chef in finding out the minimum number of problems to be solved.
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, an integers N. 
+Next line contains N space integer Ai,denoting skills of ith student.
+
+Output:
+For each testcase, print the minimum no. of problems to be solved .
+Constraints
+
+1≤T≤10
+2≤N≤500
+1≤Ai≤100000
+N  is always Even
+
+Sample Input:
+   1
+   2 
+   1 100
+
+Sample Output:
+    99
+
+

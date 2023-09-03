@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Problem_statement</title>
+</head>
+<body>
+    <div>
+        <div style="background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%) ;">
+        <div class = "input-group mb-3" style="width: 100%;">
+            <h1><a href="/search" style="text-decoration: none; color: black; margin-left: 4%;">AlgoSeek</a></h1>
+            <form action="/search" method="POST" style="margin: auto; display: block;">
+                <input size="82" style="margin:auto" type="text" class="form-control" placeholder="Search for any question" id="search" name="search"  aria-label="Search bar" aria-describedby="button-addon2" required >
+            </form>
+        </div>
+
+        </div>
+        <div style="margin-left: 4%;">
+        <h2 style="margin-top: 4%;">
+            <%=problem.prob_title%>
+        </h2>
+        <% data.forEach(line => { %>
+            <p style="margin: auto;">
+                <%=line%>
+            </p>
+        <% }) %>
+        <br>
+        <br>
+        <a href="<%=problem.prob_url%>">
+            <button class="btn btn-primary">Go to Problem website</button>
+        </a>
+        <br>
+        <br>
+        </div>
+    </div>
+</body>
+</html>

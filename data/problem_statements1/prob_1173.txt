@@ -1,0 +1,42 @@
+
+
+Programming Contests have now become quite popular these days. People from all over the world participate in these contest individually and in teams.
+
+ 
+A team of n friends decided to take part in the annual "CodeHunt Coding Contest". For participating in CodeHunt, all the members of the team must have exactly same rating. 
+
+
+Currently all n friends have a current rating of R1,R2,R3....Rn individually.
+Since, for participating in the contest all the members of the team must have exact same rating. They decided to change there rating (increase/decrease there respective rating) and make it equal to any of the friends, say TEAM LEADER, so that all friends have the same score.
+
+
+Find the total changes in the rating made by n friends. Choose TEAM LEADER in such a way, that the total changes in rating, made by n friend, is minimum.
+
+Input
+
+The first input line contains an integer n,
+n : the number of friends.
+The second line takes the n integers,
+R1, R2, R3....Rn.
+
+Output
+
+Print one integer: the minimum total changes in rating.
+
+Constraints
+
+1 <= n <= 2⋅10^5
+1 <= Ri <= 10^9
+
+Sample Input:
+
+5
+2 3 1 5 2
+
+Sample Output:
+5
+Explanation:
+
+There are n=5 friends with rating [2,3,1,5,2]. In this particular test case, the friend with score 2 is selected as the team leader. So, total changes made to make all member 2 is 5.
+
+

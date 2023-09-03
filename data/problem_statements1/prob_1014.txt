@@ -1,0 +1,29 @@
+
+Your little brother has made a program to divide two numbers, A/B that only supports integer output.
+As he haven't handled any exceptions, the program will crash if any error occurs.
+For  given two numbers, predict if his program will be safe after execution.  
+Input
+First line contain single integer T, No. of test case
+Next line for every test case contain two numbers, A and B 
+Output
+Print "crash" (without quotes) if program crashes and "safe" (without quote) otherwise
+Constraints
+1 <= T <= 104
+0 <= A <= 105
+0 <= B <= 105
+Sample Input
+4
+55 5
+98 9
+5 2
+0 98  
+Sample Output
+safe
+crash
+crash
+safe  
+Explanation
+98/9 and 5/2 generates fractional result, hence crash   
+Note
+25x time multiplier for Java due to slow I/O for this problem.
+

@@ -1,0 +1,39 @@
+
+Chef loves to travel and he wants to travel as far as he can.
+Recently he landed in a country called Chefland.
+Now there are many states in the country connected by a bi-directional bridge which connects State A to State B(There is no cycle).
+Chef bought a car and he is running out of time and money so he bought K litres of fuel to travel.
+Now chef wants to cover the longest path from an state A to state B and as he travels from an state U to V(if there is bridge between U and V) fuel reduces by a litre(If he had X litres of fuel before travelling from U to V then after it becomes X-1 litres).
+If K litres is not sufficient to cover the longest path then he can't travel.  
+Determine if it is possible to cover the longest path.  
+If K is not sufficienct to cover the longest path then print the minimum litres of fuel required to cover rest of the path else Print 0.
+Note: There is no cycle.    
+Input:
+The first line of the input contains two space-separated integers N and K,denoting the number of States and next N-1 lines contains contains two space-separated integers u and v, denoting State u and State v are Connected by bridge.   
+Output:
+Print 0,If K litres is sufficient to cover the longest path.
+else,Print the Litres of fuel required to cover rest of the path.  
+Constraints:
+2<=N<=1000
+1<=K<=1000 
+Example 1:
+Input:
+4 4
+3 1
+1 2
+3 4  
+Output:
+0
+Note-> Chef can travel from State 2 to State 4 and 3 litres is required to travel from State 2 to State 4 which is lesser than K(i.e 4).  
+Example 2:
+Input:
+6 2
+1 2
+4 1
+4 5
+6 1
+2 3  
+Output:
+2
+Note-> Chef can travel from State 3 to State 5 and 4 litres is required to travel from State 3 to State 5 which is greater than K(i.e 2) and 2 litres is required to cover the path.
+

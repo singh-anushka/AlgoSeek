@@ -1,0 +1,45 @@
+
+Tinder is a dating app that is trying out a new way of making people interact face to face. It allows its users to opt in to this new way of dating and maintains a list of the gender of the users who are willing to participate in the order they opt in. Assume we have males and females represented by $M$ and $F$ respectively.
+Now, to make the interaction as effective as possible, they want to divide the people into as small groups as possible keeping the number of males and females equal in every group. Also, they must keep the groups contiguous as they are in the list. So they can not pick people from random places in the list and put them in a group, instead, they should create divisions in the list to make the group. Note that each person should be part of at-least $1$ and only $1$ group.
+Your job, as their software engineer, is to find out what is the maximum number of such groups formed. It is guaranteed that one such grouping will always exist.
+
+Input:
+
+The first line contains an integer $T$ which is the number of test cases.
+The first line of each test case has an integer $N$ denoting the number of people that opted in.
+The second line has a string of length $N$ which contains the list of people.
+
+
+Output:
+For each testcase, output a single integer in new line denoting the number of maximum groups formed.
+
+Constraints
+
+$1 \leq T \leq 100$
+$1 \leq N \leq 10^5$
+$N \% 2=0$
+Number of $M$ is equal to number of $F$
+
+
+Subtasks
+Subtask #1 (100 points): Original constraints
+
+Sample Input:
+2
+6
+MFMFMF
+8
+MMFFMFFM
+
+
+Sample Output:
+3
+3
+
+
+EXPLANATION:
+
+First case: MF, MF, MF.
+Second case: MMFF, MF, FM 
+
+

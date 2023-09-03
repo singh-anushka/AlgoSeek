@@ -1,0 +1,32 @@
+
+It is your first day at your new job at Future Transport, a transportation company that assures the customers that they, their pets, or their packages will travel faster and arrive on time if sent through one of their carefully chosen routes.
+The CEO, seeing there are new employees, starts bragging about how many cities have offered the company incentives to establish a headquarter. It turns out the company only needs to have one headquarters to ensure efficient transportation. For example, for the route between Phoenix and Austin, a headquarter in Phoenix will suffice although having two headquarters will not harm either. Still, the company prefers if they could get away with the minimum number of headquarters needed to operate all the routes.
+As a new graduate, you suddenly remember your recent graduate (or senior) level algorithm course and open your mouth (which you regret instantly) and say that you know how to achieve the minimum number of headquarters while monitoring all the routes. The CEO, thinking he can teach you a lesson in humility, instantly agrees to let you decide the number of headquarters. “I will make it even easier on you”, he says. “I will give you a number, and you tell me if it is possible to monitor all the routes by building that many headquarters! You don’t even need to specify the locations!”
+Input:
+-The first line is the number of test cases. Test case description follows:
+-The First line in each test case shows the total number of cities (VV) the company is operating in. The next line contains the description of the routes. Each route is a pair of i−ji−j denoting that there is a route between i'th and j'th cities. Route information in each line is space separated. Finally, the last line in each test case denotes the number of headquarters (k).
+Output:
+For each test case, output in a single line YES, if it is possible to monitor all routes by building k headquarters, otherwise output NO. There are extra points if you show us that your program outputs the cities themselves.
+Constraints
+
+1≤T≤50
+1≤V≤1000
+1≤k≤10
+
+Subtasks
+
+If your program also outputs the headquarters themselves, let us know and you will get extra points!
+
+Sample Input:
+1 
+    6
+    0-1 0-2 1-2 1-3 1-4 1-5
+    2
+
+Sample Output:
+YES
+
+EXPLANATION:
+There is one test case having 6 cities (ordered from 0 to 5). The routes between these 6 cities are described in one line. The routes are bidirectional; if there is a route from i to j, then there is a route from j to i. The last line (2) asks if we can monitor all the routes by establishing 2 headquarters.
+The answer is YES. By establishing two headquarters at cities 1 and 2, all the routes among the cities are monitored. If your program also outputs 1,2 (or 0,1), you will get extra points by showing a judge at the competition what your program can do!
+

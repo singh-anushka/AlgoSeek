@@ -1,0 +1,28 @@
+
+Chef always loves to solve triangle problem.But due to his illness chef is not able to solve
+his triangle problem. Can you help Chef to solve this problem?
+Your task is to  print "YES" if triangle is possible and find out the area of the  triangle. Otherwise print "NO"(if not possible).  
+For every test case given inputs a, b, and c,three sides of triangle.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, three integers a,b,c. 
+
+Output:
+For each testcase, output in a single line answer "YES"(if triangle possible) and area of triangle correct upto five decimal places space separated. Otherwise "NO".
+Constraints
+
+1≤T≤105
+1≤a,b,c≤107
+
+Sample Input:
+2
+ 3 4 5
+ 2 4 7
+Sample Output:
+YES 6.00000
+ NO
+EXPLANATION:
+For 1st test case Triangle is possible. And area is 6.00000
+And for 2nd test case triangle is not possible.
+

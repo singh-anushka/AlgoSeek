@@ -1,0 +1,43 @@
+
+Sherlock has made a N×NN×N (Numbered 11 through N) square matrix on the floor with a colored pencil. Cell(i,j) denotes the Cell at row i and column j. And he has exactly N2 toffees having price P on it. He keeps all the toffees randomly on each cell. You can start from any Cell(i,j) and can only move to the Cell(i+1,j+1) or Cell(i−1,j−1) and you can visit the Cells as long as a Cell lies within the boundary of the matrix and the cells which are not been visited yet. You need to maximize the total price S by picking the toffees from the cells as per the given condition.
+
+Input:
+
+The first line contains the integer N. Followed by N lines and each line contains N space-separated N integers i.e. P(i,j). 
+
+
+Output:
+
+Print a single line containing the integer S – The maximized total price of toffees.
+
+
+Constraints
+
+1≤N≤103
+0≤P(i,j)≤106
+
+
+Sample Input 1:
+    2
+    1 2
+    4 5
+
+Sample Output 1:
+    6
+
+
+Sample Input 2:
+    4
+    0 0 3 0
+    2 3 10 5
+    1 0 0 1
+    0 1 6 1
+
+Sample Output 2:
+    11
+
+
+EXPLANATION:
+Sample case 1: The moves you can follow are (1,1)->(2,2).
+Sample case 2: The moves you can follow are (2,3)->(3,4).
+

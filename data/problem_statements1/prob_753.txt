@@ -1,0 +1,38 @@
+
+ 
+You live in a graph G, with N vertices and M edges. P of these vertices have gangsters living on them. You owe each gangster some money, given by the array C (of size P). You wish to travel from s to t. If you step within distance k of any gangster who you haven't paid, you die. 
+We define the length of a path as then number of edges it comprises. We define the distance of two nodes as the length of the shortest path connecting them. Further, we define the cost of travelling as the sum of gangster debts you pay off.
+Of course, you wish to minimise the cost of travelling from s to t without dying. Note that you may not die at s or t either.
+ 
+Input
+First line contains four integers, N, M, P, and K. Second line contains P integers, the locations of the gangsters. Third line contains P integers, the money you owe to each gangster. Each of the next M lines contains two integers, xi and yi, which mean that there exists an edge between the nodes xi and yi. The last line contains two integers, s and t, the source and the target. It is guaranteed that a solution always exists. 
+Output
+A single integer, the minimum cost of travelling from s to t.
+ 
+Constraints
+
+1 ≤ N,M,K ≤ 105
+1 ≤ P ≤ 10
+1 ≤ Ci ≤ 109
+
+ 
+Example
+Input:
+5 5 1 1
+4
+100
+1 2
+2 3
+3 4
+3 5
+4 5
+1 5
+Output:
+100
+
+ 
+Explanation 
+ The graph for the sample input looks like:
+
+Note that the gangster at node 4 is at distance 1 from node 3 and node 3 must be passed on the way from node 1 to node 5. Hence, we cannot do better than a cost of 100.
+

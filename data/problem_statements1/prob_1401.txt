@@ -1,0 +1,42 @@
+
+Chef has NN items in his Shop (numbered 11 through N); And for Each valid i (1<=i<=N).       the weight of the i−th item is Wi. Since Chef is very sensitive in nature.
+Chef wants to arrange all even weights items one side and odd weights items on another side. Chef can arrange two adjacent items with help of swapping at one operation.
+Chef wants a minimum number of operations required to arrange All Even weights item on one side and All Odd weights item to the another side.
+Chef can’t solve this problem so he asks you to solve it. Help Chef to solve this problem.
+Input:
+
+First-line will contain T, number of test cases. Then the test cases follow. 
+The first line of each test case contains a single line integer N.
+The second line contains N space-separated integers
+W1,W2,…,WN
+
+Output:
+Print the minimum number of operations required Chef can make it. If Chef can't take any operations, print 0.
+Constraints
+
+1≤T≤100
+2≤N≤105
+3≤Wi≤105
+The sum of N over all test cases does not exceed 3⋅105
+
+Sample Input:
+3
+6
+1 2 3 4 5 6
+5
+5 7 3 10 20
+3
+1 8 7
+
+Sample Output:
+3
+0
+1
+
+EXPLANATION:
+Example case 1:  You can arrange all even numbers right side. 
+Numbers of swaps 6 arrange at position 6th is 0 operations, 4 arrange at position 5th is 1 operations, 2 arrange at position 4th is 2 operations.
+Given array [1,2,3,4,5,6] to [1,3,5,2,4,6]
+Total : 0 + 1 + 2 = 3 operations
+Example case 2: Initially All odd number one side and all even number another side, so minimum number of operations : 0.
+

@@ -1,0 +1,31 @@
+
+For the new semester, iIIIT has offered NN courses, ithith of which has Ai credits. The administration has also put a maximum limit M on the number of credits a student can do in a single semester.
+As Kunal goes about to choose his courses, he would first like to find out the total number of ways in which he can select courses. That is, he would like to find out the number of subsets of these courses whose sum of credits is less than or equal to M.
+Help him find the number of such subsets. Note that the same integer - if on different positions - is counted differently.
+As the answer can be quite large, print it modulo 1879048192
+Input
+
+The first line contains 2 integers N and M, the total number of courses available to choose from and the maximum number of credits a student can take in a semester.
+The second line contains N integers, ith of which represents Ai
+
+Constraints
+
+1≤N≤2∗103
+1≤M≤2∗103
+1≤Ai≤2∗103
+
+Output
+Print a single integer telling the number of subsets of courses which can be taken, modulo 1879048192
+Sample Input
+4 10
+1 1 8 9
+
+Sample output
+11
+
+Explanation
+Valid subsets are: {}, {1}, {1}, {1, 1}, {8}, {1, 8}, {1, 8}, {1, 1, 8}, {9}, {1, 9}, {1, 9}.
+Hack case note
+Find the buggy solution to this problem on GitHub or Drive.
+This problem is part of DeCode contest, wherein you are given a problem (as given above) and its buggy solution (link in contest announcement). You have to submit a program that outputs a hack case to the buggy solution. Your program's output should satisfy the input constraints of the above problem.
+

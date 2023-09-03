@@ -1,0 +1,61 @@
+
+A lot of people participating in a contest are obsessed with looking at the leaderboard to see how they are doning (Even you might have checked it just now. Hope you are doing well :P).
+Considering there are NN teams participating and there are M problems in the contest. What would be the expected number of problems solved by the team at rank K on the leaderboard?
+If the expected value is P/Q you must print the value P∗Q−1%MOD, where MOD=109+7.
+Input
+
+First line contains T, number of test case,
+For each test case, you are given 3 space seperated integers N, M and K.
+
+Output
+
+For each test case print the desired answer.
+
+Constraints
+
+1≤T≤10
+1≤K≤N≤109
+1≤M≤50
+
+Sample Input
+2
+1 1 1
+2 2 2
+
+Sample Output
+500000004
+545454550
+
+Explanation
+For the first test case, there can be only 2 possiblities(Here S represents solved and U represents unsolved) - 
+U
+S
+Therefore expected number of problems solved by rank 1 = 1∗(1/2)+0∗(1/2)=1/2
+For the second example there can be 11 possibilities - 
+2 problems solved by rank 2 -
+SS
+SS
+1 problem solved by rank 2 -
+SS
+SU
+SS
+US
+SU
+SU
+SU
+US
+US
+SU
+US
+US
+0 problem solved by rank 2 -
+SU
+UU
+US
+UU
+UU
+UU
+SS
+UU
+Therefore expected number of problems solved by rank 2 - 0∗(4/11)+1∗(6/11)+2∗(1/11)=8/11
+

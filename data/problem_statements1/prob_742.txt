@@ -1,0 +1,60 @@
+
+You are the well known video game player of your generation. You are deep diving into a newly launched video game. The game has nn levels each level is labelled by a number from 00 to n−1. In the game some levels. 
+In the game some of level need some prerequisites i.e two integer x, y which means before playing the level x  you need to complete level y.
+
+For example the prereqsites {1,2} denotes that you need to complete level 2 to play level 1.
+
+Input Format
+
+First line contains an integer T denoting the number of testcases .
+First line of each test case represent two integer n and m, denoting the no. of level and size of prerequisites set
+Next m line contain two space separated integer x,y denotes that to complete xth level you should be completed with level y.
+
+Output Format
+Print Yes if it is possible to clear all level else Print NO.
+Constraints
+
+1≤T≤100
+2≤N≤105
+0≤M≤105
+0≤x,y<N
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+6 3
+1 2
+2 0
+4 5
+2 2
+1 0 
+0 1
+2 1
+1 0
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+Yes
+No
+Yes
+
+
+Explanation
+
+In the first testcase : Level can be completed in the order of 0 2 1 5 4 3
+In the Second testcase : It is impossible to complete all the level because to play level 1 level 0 required and to play level 0 level 1 required.
+
+

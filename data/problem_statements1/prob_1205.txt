@@ -1,0 +1,45 @@
+
+
+It is time of i.fest'16 and deadline is till 2 am for girls. Last night one newly formed couple (Mr.X and Miss.Y)
+was going on CR. Seeing this Mr.Z who has a big crush on Miss Y since first year, wants to follow them and see what 
+they are doing this late.So assuming CR as a circular track of radius r. Both the couple and Mr.Z starts from canteen.
+They start either in same direction or in the opposite direction, indefinitely (for infinite time).
+
+The speed of both of them is given to you with radius of circle.
+Speed will be positive in clockwise(HoR-Women) direction, and negative in anticlockwise(HoR-Men) direction. 
+Print the number of distinct points, at which they will meet on the circle.
+
+If both couple and Mr. Z are travelling with the same speed print "INF" (without inverted comma).
+
+Input
+
+First line contains T, number of test cases.
+Each test case contains three space separated integers, r, v1 and v2. 
+Here r is the radius of the circular track and v1 and v2 are the velocity of couple and Mr. Z respectively.
+
+Output
+
+For each test case print an integer on new line denoting the number of distinct point that they would meet during 
+CR which is going on for indefinite time. 
+
+Constraints
+
+1 <= T <= 100000
+1 <= r <= 1000000
+-1012 <= v1,v2 <= 1012
+
+Example
+Input:
+2
+2 1
+4 2 
+
+Output:
+1 
+1
+
+Explanation
+
+Self Explanatory :-)
+
+

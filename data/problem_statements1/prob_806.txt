@@ -1,0 +1,51 @@
+
+Local area networks are  group of computers that are inter-connected within small geographic region. You have some file with you and n computers numbered 1 to n and you want each computer in your LAN to get access(or share) of that particular file. A computer has a access to the file if :-  
+
+This computer has file in it's own memory, or
+This computer is directly or indirectly connected to a computer that has that file.
+For instance, if 1, 2 and 3 are IDs of three computers respectively, then, if computer 1 is connected to computer 2 and computer 2 is connected to 3 and computer 1 has the file, then computer 2 and 3, both have the access to that file.
+But there's some issue, not all computers are following same network protocol and due to this, you can only connect computers with same protocol. Formally, not all computers will always be a part of same connected component of the network graph. 
+
+You will be given the cost of installing the file on any computer and cost of connecting any two computers in same protocol. You need to find minimum cost such that every computer has access to this file. 
+Please note that cost of connecting any two computers is same. But you can only connect them if they are following same protocol.  
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow.  
+The first line of each test case contains four space-separated integers  n,m,a,b, the number of computers, the number of connections you can make, cost of installing the file and cost of connecting any two computers.
+Each of the next m lines contains two space-separated integers u[i] and v[i],  that describes a bidirectional connection can be made between these computers i.e. these two computer are following same protocol an can be connected to each other.
+Each connection connects two distinct computers.
+
+Output:
+For each testcase, output minimum cost in doing the task.
+Constraints
+
+1≤T≤10
+1≤n≤105
+0≤m≤min(105,n∗(n−1)/2)
+1≤a,b≤105
+1≤u[i],v[i]≤n
+
+Sample Input:
+2
+3 3 2 1
+1 2
+3 1
+2 3
+6 6 2 5
+1 3
+3 4
+2 4
+1 2
+2 3
+5 6  
+Sample Output:
+4
+12
+EXPLANATION:
+Case #1 : You can connect computer 1 to 2 and 2 to 3 and install file only on computer 1. Cost of installing the file is 2 and cost connecting any two computers is 1. Total cost of connecting two computers would be 1∗2 here. Therefore, the answer is 2+2∗1=4.  Cost of installing the file on each computer would be 3 * 2 = 6. Since, previous choice yields minimum cost, we choose that option.
+
+ 
+Case #2 : The most optimal choice is to install the file on each computer.    
+
+
+

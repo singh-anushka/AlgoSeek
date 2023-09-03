@@ -1,0 +1,21 @@
+
+Chef’s brother has visited the Chef during his summer vacation. Chef’s brother loves to play with numbers. So Chef gave him 2 numbers A and B. Chef asked his brother to find the minimum number of steps required to reach B from A given only the following operations can be performed any number of times:Decrement the current number by 1Increment the current number by 3Multiply the current number by 2Chef’s brother found this problem very easy and asked you to solve it. Can you solve this problem for him?
+InputThe first line of the input contains an integer T denoting the number of test cases.  The description of T test cases follows.The first and only line of each test case contains two space-separated integers A and B.
+OutputFor each test case, output a single line containing the answer.
+Constraints
+
+1 ≤ T ≤ 100
+0 ≤ A,B ≤ 2*103
+ExampleInput:
+2
+4 7
+0 10
+Output:
+1
+4
+
+Explanation
+Test case 1. You can reach from 4 to 7 in just one step by adding 3.
+Test case 2. It is possible to reach 10 from 0 in just 4 steps. 0 -> 3 -> 6 -> 5 -> 10
+First add 3 to the number 2 times to get 6, then subtract 1 from it to get 5, and then just double it to get 10.
+

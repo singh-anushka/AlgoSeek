@@ -1,0 +1,28 @@
+
+          
+            There are N Hospitals and at each Hospital there are Pi number of Patients.You are a Doctor(But you are very Lazy) and You have been Given a task to Apply Vaccines to Each Patient.But There is a Problem.You can give Vaccine to Exactly K Patients on a Day.Your Task is to Find Smallest K (Because you are feeling Tired) such that you can Vaccinate all the Patients of N Hospitals in almost D days.
+Note:-> If Patients of a Hospital is less than K then it is said to be Normal.
+
+Input:
+1)The first line of the input contains two space-separated integers denoting N and D respectively.
+2)The second line contains N space separated integers denoting Patients P1,P2,….PN.
+
+Output:
+1)Print only one line containing a single integer denoting the smallest K as explained in the problem statement.
+2)If it is not possible to find such K, then print −1
+
+Constraints:
+1≤N≤10^5
+1≤Pi≤10^4 
+1≤D≤10^9
+
+Sample Input:
+6 16
+2 3 4 5 7 16
+
+Sample Output:
+3
+
+Explanation:
+By Vaccinating 3 Patients for up to 16 Days He can Vaccinate all the Patients. 
+

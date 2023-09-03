@@ -1,0 +1,67 @@
+
+Covid-19 virus has reached Simalokolo!
+Now Mayor Ram has to save the city!
+Mayor Ram has already prepared for this situation and has created Divoc-91 virus!
+This Divoc-91 virus can prevent Covid-19 infection!    
+Simalokolo has N×M blocks.
+The blocks are numbered from 1 to N row-wise and 1 to M column-wise.
+Each of the block has one of the three status at the time 0 (i.e starting time): 
+
+Infected by Covid-19
+Infected by Divoc-91
+Un-infected
+
+Now, both the virus can spread to adjacent blocks after 1 unit of time.
+That means if any of the virus is at block (i,j) currently then after 1 unit of time it will spread to:
+
+(i+1,j)
+(i−1,j)
+(i,j+1)
+(i,j−1)
+
+If Divoc-91 reaches any block before Covid-19 or at the same time as Covid-19 ,
+the people living in that block won't suffer from Covid-19 infection!
+Now Mayor Ram knows that if the number of blocks which will suffer from 
+Covid-19 infection is more than ⌈N∗M2⌉ then he won't have enough supporting voters for next elections and he will have to announce a FAKE 20 LAKH CRORE Simalokolan-Dollar package for the public to save his face! 
+You are given the locations of Covid-19 and Divoc-91 infections at time 0.
+Calculate the number of blocks which will have suffered from Covid-19 infections after a very long time!
+Note: Even if Covid-19 won't infect the people of some blocks , it can still spread from that block to other blocks because it can spread through air too!
+
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+The first line of each testcase contains two integers N and M denoting the number of rows and the number of columns respectively.
+The next line contains an integer C denoting the number of cities infected by Covid-19 at time 0.
+The next C lines each have two integers r and c denoting the row number and column number of the infected city. 
+The next line contains an integer D denoting the number of cities infected by Divoc-91 at time 0.
+The next D lines each have two integers r and c denoting the row number and column number of the infected city. 
+It is guarenteed that no city is infected by both viruses at time 0.
+
+
+Output:
+For each testcase, output in a single line the number of blocks which will suffer from Covid-19 infections.
+
+Constraints
+
+1≤T≤103
+1≤N,M≤103
+0≤C,D≤N×M
+1≤r≤N
+1≤c≤M
+Sum of N×M over all test cases doesn't exceed 105 
+
+
+Sample Input:
+1
+3 3
+1
+1 1
+1
+3 3
+
+Sample Output:
+3
+
+EXPLANATION:
+Blocks (1,1),(1,2),(2,1) will suffer from Covid-19.
+

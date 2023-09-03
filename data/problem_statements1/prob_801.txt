@@ -1,0 +1,37 @@
+
+Apocalypse is about to happen in one day. New World will begin after one day in Winden! Jonas is the only person who knew about this. He also knew that those who stay in the bunker will live and proceed to the new world. Others will be dead after apocalypse happens.
+Jonas wants to save his crush, Martha. He wants to send a message to her. However, Adam is a villain here. If Jonas sends a plain text message, Adam will modify it. Jonas knows about Adam, so he is going to send an encrypted message using KK-strong key.
+Jonas has a string containing NN lower case English letters, which he can use to make a key. He can use any character from string at most once in any order to make a key. A key of length M is K-strong if for any index 0≤i< M ,character at index i and index (i+K)%M should be the same. Jonas wants it to make it the longest possible string so that Bruteforce Attack can't easily predict it. Can you help Jonas to find the maximum length of a K-strong key he can make?.
+Input
+The first line of the input contains an integer T denoting the number of test cases. Then T test cases follow.
+The first line of each test case contains integers N and K. Second line contains a string S  containing N lower case English letters.
+Output
+For each case, print the maximum length of K-strong key you can make.
+Constraints
+
+1≤T≤100
+1≤N,K≤2,000
+The sum of N for all test cases does not exceed 2000
+
+Example Input
+3
+4 8
+bbbb
+8 4
+abcddcba
+6 1
+ababab
+20 7
+qwnfdnjppcerjbsuatrl  
+
+Example Output
+4
+8
+3
+7
+
+Explanation
+Case 1: “bbbb” is maximum possible 8- strong key.
+Case 2: “abcdabcd” is maximum possible 4- strong key.
+Case 3:  "aaa" and "bbb" are possible strings for 1-strong key.
+

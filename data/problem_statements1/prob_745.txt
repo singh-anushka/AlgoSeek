@@ -1,0 +1,55 @@
+
+Chef is a soldier of Chefland. Whenever Chef fights in any battle he always wins. The reason behind this is not that Chef is bravo but he always joins the group which is already strong and there are high chances of winning. 
+In Chefland there is NN number of soldiers live excluding Chef with strengths A1,A2,.......ANA1,A2,.......AN. A huge battle is only possible if the following conditions exist: 
+
+If you can divide all soldiers into two groups(not necessarily equal size) excluding Chef.
+Grouping is done in such a way that one group has maximum strength possible.
+At least one member of a group must have challenged at least one member of another group for war(If two or more groups exist).
+If two soldiers challenged themself then they can not exist in the same group because they became enemies to each other.
+It is possible that two different soldiers challenge the same soldier.
+If a soldier S1 challenges a soldier S2 then they must join the different groups.
+One soldier only exists in one group.
+
+Example1
+Let's consider the following situation.
+
+As you can see there are four solders that exist in the Chefland, S1,S2,S3, and S4. Edges represent the challenges made by themself. As S1 is an enemy of S2 so they cannot exist in the same group. Likewise (S2&S3),(S3&S1) and (S2&S4) can not exist in same group. One possible group can be (S1),(S2),(S3,S4). As S4 is not an enemy of S1 and S3 so he can join either group. As we cannot divide everyone into two groups so the huge battle is not possible.
+Example2
+
+Let's say the strengths of A,B,C,D are 10,6,7,8. The only groups exist are g1(A,D) and g2(B,C). The Sum of strengths in the groups is 18 and 13, and we can devide soldiers into two groups so the huge is possible and Chef will join the first group because of it's higher strength.
+If all soldiers made M challenge to each other then you need to find out the maximum possible strength of the team which Chef will join.
+Input:
+
+The first line of each test case contains T, the number of test cases. 
+The first line of each test cases contains two integers N and M, the number of soldiers and challenges.
+The second line of each test case will contain a stream of integers A, strengths of the soldiers.
+Then M lines follow after the second line, contains two integers u and v denotes they are enemy to each other i.e, they challenged each other. You can clearly see that it is not possible to divide them into two groups so the huge battle is not possible here.
+
+Output:
+For each testcase, if an answer exists then print "YES" without quotes and also print maximum strengths in the second-line otherwise only print "NOT POSSIBLE" in one line if a huge war is not possible.
+Constraints
+
+1≤T≤10
+1≤N≤100000
+0≤M≤min(100000,N∗(N−1)/2)
+1≤u,v≤N
+0≤Ai≤108
+
+Sample Input1:
+2
+2 1 
+5 6 
+1 2
+3 3 
+1 2 3
+1 2
+2 3
+3 1 
+Sample Output:
+YES 
+6
+NOT POSSIBLE
+EXPLANATION:
+Test Case1: From the test case, it is seen that there exist only two teams one with strength 5 and another with strength 6, so Chef will join team with maximum strength i.e, 6.
+Test Case2: You can not divide into two teams, so the huge war is not possible.
+

@@ -1,0 +1,40 @@
+
+People think that Gump is a genius, but the truth is that luck has always been on his side. No one knows how he always comes up with solutions to complex problems and becomes everyone’s hero.
+He has been challenged once again, and this time it’s not that simple. He is given with the length N and sum S of a sequence A of numbers, and he has to:
+Step 1: Find all possible sequences of numbers of length N with sum S
+Step 2: Find the products of all such sequences respectively
+Step 3: Print the maximum one
+Gump is really busy this time, and he doesn’t have time for this challenge, can you solve this one for him?
+Input:
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+Each testcase contains of a single line of input, two space-separated integers N and S. 
+
+Output:
+For each testcase, follow the above mentioned steps and perform Step 3. Print it modulo 109+7.
+Constraints
+
+1≤T≤105
+1≤N≤105
+N≤S≤109
+Ai>0, for each valid i
+Ai is a number, for each valid i
+
+Subtasks
+
+10 points:
+1≤T≤20
+1≤N,S≤50
+S=α×N, where α is a positive integer
+90 points: original constraints
+
+Sample Input:
+1
+3 6
+
+Sample Output:
+8
+
+EXPLANATION:
+Example Case 1: The maximum product is found with the sequence [2,2,2].
+

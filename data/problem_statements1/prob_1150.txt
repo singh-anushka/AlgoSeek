@@ -1,0 +1,36 @@
+
+Mr. White wants to improve the quality of his methamphetamine among his consumers to boost his production. He has noticed that if he can increase the hardness(H) and the fragrance (F) of his product it will become more popular. The initial hardness is X and fragrance is 0. He has two chemicals  labelled 1 and 2 to add in his formula in order to increase the H and F. 
+
+Adding 1: H gets multiplied by A and F is increased by 1.
+Adding 2: H gets increased by B and F is increased by 1.
+
+The quality of the methamphetamine will decrease if H≥Y. Find the maximum possible fragnance (F) without lowering the quality of the drug.
+Input:
+
+First-line will contain T, the number of test cases. Then the test cases follow. 
+Each test case contains a single line of input, four integers X,Y,A,B. 
+
+Output:
+For each test case, output in a single line , the maximum possible F of drug without lowering quality of the Drug.
+Constraints
+
+1≤T≤1000
+1≤X≤Y≤109
+2≤A≤109
+1≤B≤109
+
+Sample Input:
+1
+
+4   20   2   10
+Sample Output:
+2
+
+EXPLANATION:
+Initially Drug Hardness H was 4. Mr. White can make his fragrance F 2 by the following operation.
+
+He can choose Chemical 1 and increase the hardness and fragrance of Drug to H 8 and F 1.
+And then he chooses Chemical 2 and increase the hardness and fragrance of Drug to H 18 and F 2.
+
+On the other hand, there is no way he mix the chemicals so that the fragrance F becomes greater than 2.  
+

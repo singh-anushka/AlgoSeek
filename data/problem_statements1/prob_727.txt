@@ -1,0 +1,31 @@
+
+IPL session is On. Cricket matches are being played in "N" different stadiums of India(stadium number is 0 based indexed).
+All stadium are connected to each other, and distance between all the adjacent stadium are same i.e One.
+The chef is currently in the Stadium number of 0.
+As the chef is busy watching IPL so you have to find the stadium which is farthest from stadium 0 and also find that distance.
+Note:
+If more than one stadiums are farthest from stadium 0 then print the stadium number which is minimum.  
+Input Format:
+The First Line contains 2 space-separated integers N and E,i.e N is the number of stadiums and E is the number of paths connecting two stadiums.
+Next, E lines contain 2 space-separated integers denoting the stadium number which are connected to each other.
+Output Format:
+Print the stadium number which is farthest from stadium 0 as well as its distance from stadium 0.
+Constraints:
+1 <= N <= 10^5
+1 <= E <= 10^5  
+Sample Input:
+10 9
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+4 7
+7 8
+8 9  
+Sample Output:
+9 7  
+Explainations:
+If you make a graph with the above data then you can easily see that Stadium 9 is farthest from Stadium 0 and its distance is 7, so output is [9 7].
+

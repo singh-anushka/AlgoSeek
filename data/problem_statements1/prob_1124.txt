@@ -1,0 +1,34 @@
+
+The Battle of Naboo was one of the most iconic battles of Star Wars and our mate Phoenix was a laser sharp shooter fighting on the side of Anakin Skywalker. But, he soon found that he was running out of ammo but the Federation wasn’t running out of ships. So, he devised a cunning plan that would change the course of the battle. He powered up the lasers so that they would penetrate an infinite number of ships with just one single shot. And he won.
+So, you now have to recreate the iconic battle of Naboo where you are in a sim as the warrior Phoenix whose legacy goes untold in the series. You have to use the minimum number of Lasers to destroy every ship on the battlefield and lead your forces to victory.
+The placement of the ship goes like this - 
+You are always standing on the point (1,1)(1,1) and all the ships are randomly scattered through the area on any point from (1,1)(1,1) to (N,N). Each laser travels as follow and destroys every ship in its path.
+So, can you complete the simulation by using the minimum number of lasers?
+Input:
+
+First line will contain two integers N the size of grid and M the number of ships.
+Each of next M lines will contain two integers xi and yi, the position of ith ship.
+Note that there is no ship at position (1,1). 
+
+Output:
+Print a single integer, minimum number of lasers to destroy all the ships.
+Constraints
+
+1≤N,M≤1000
+1≤x,y≤N
+
+Sample Input:
+    6 5
+    2 3
+    3 1
+    3 5
+    4 4
+    6 1
+
+Sample Output:
+    3
+
+EXPLANATION:
+
+In the given test case, As we can see in above diagram all the ships can be destroyed by 3 lasers.
+

@@ -1,0 +1,56 @@
+
+It's a story of long ego, Sondesh was on her first class of matrix. After coming back home, she was very curious about it. She was taking two matrix and was trying to add them. If she would be successful, as she was very fond of maximum and minimum of everything, tried to find out the elements which are minimum in their row but maximum in their coloumn.
+She practiced for a while and now she is going for watching her favourite drama, so she asked her Meaw to do this tasks. Meaw is thinking of making a program to do that quick. Can you help him?
+Input:
+There will be T test cases. First line of the input is an integer- the value of T.
+First line of each test case consists of two integer n and m which are the rows and coloumns of the first matrix. Next n line with m space separated integers in each line denotes the first matrix.
+Next line contains p and q which deontes row and coloumn of the second matrix and the last p lines with q space separated intregers in each line deontes the second matrix.
+Output:
+If it is not possible to add the matrices, print  Syntax error.
+Else print the elements Sondesh wants to find out.  Print the elements space separately.
+If it is not possible to find such element which will be minimum in their row but maximum in their coloumn, print 404 not found.
+Constraints
+
+1≤T≤100
+1≤n,m,p,q≤300
+The elements of the array will be in the range [0−106]
+
+Sample Input:
+3
+3 3
+2 3 4
+1 2 6
+4 1 2
+3 3
+1 2 3
+5 6 7
+23 2 1
+3 3
+3 6 9
+3 10 22
+0 19 20
+3 3
+3 6 10
+0 1 1
+1 2 2
+3 3
+3 6 9
+3 10 22
+0 19 20
+3 2
+3 6 10
+0 1 1
+
+Sample Output:
+404 not found
+6
+Syntax error
+
+Explanation
+
+In the first sample, after adding the matrices, there is no element possible that can be row wise minimum and coloumn wise maximum.
+In the second sample, after adding the two matrices, In the first row, min{6, 12, 19}= 6 and In the first coloumn, max{6, 3, 1}=6. So, 6 is the element which is row wise minimum and coloumn wise maximum.
+In the last sample, it is not possible to add the matrices.
+
+Dataset can be huge. Use faster I/O method.
+

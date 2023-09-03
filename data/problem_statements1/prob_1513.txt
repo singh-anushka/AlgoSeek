@@ -1,0 +1,32 @@
+
+There is a candy shop that sells NN varieties of candies. The ii-th variety has ai candies.
+You want to buy as many candies as possible. If you buy bi candies of variety i, then for all 1≤j<i either bj=0 (you bought 0 candies of type j) or bj<bi (you bought less candies of type j than of type i).
+Remember, there is no shortage of money.
+
+Input
+
+The first line contains an integer N, denoting the number of varieties of candies.
+The next line contains N integers ai, denoting the number of candies of each variety.
+
+
+Output
+Print the maximum number of candies you can buy.
+
+Constraints
+
+1≤N≤2⋅105
+1≤ai≤109
+
+
+Sample Input:
+5
+1 3 2 5 8
+
+
+Sample Output:
+16
+
+
+Explanation
+It is optimal to buy 0+1+2+5+8 candies.
+

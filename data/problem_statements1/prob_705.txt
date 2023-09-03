@@ -1,0 +1,65 @@
+
+The King of Chefland, as you can all guess, is Chef himself. Chef loves his territory so much that he has built Palace for himself in every city of his territory. Every weekend, Chef loves to travel from one city S to another city D within his territory and spend the week in his palace in city D. But, every road in Chefland connecting one city to another is unidirectional road, i.e. one can move only from one city to another but not in the reverse direction. Chef has ordered his minister to make the required arrangements for his travel. The arrangements his minister can make are :-
+
+Convert any number of existing roads to bidirectional roads 
+Build a new road from city S to city D
+
+The total cost of converting all unidirectional roads of Chefland to bidirectional roads is less than building a new road. Now being a responsible minister of Chefland he wants to find the minimum number of roads he has to convert or build a new road if required.
+
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follow.
+The first line of each test case contains two integers N and M denoting the number of cities and the number of roads respectively. M lines follow. 
+Each of the M lines contain two space-separated integers A and B denoting there is a unidirectional road from city A to city B. The next line contains two space-separated integers S and D denoting the Chef wants to travel from city S to city D.
+
+Output
+For each test case, output a single line containing the minimum no of roads to convert. If it is needed to build a new road, then output -1.
+Constraints
+
+1 ≤ T ≤ 100
+2 ≤ N ≤ 100000
+1 ≤ M ≤ 100000
+1 ≤ A,B,S,D ≤ N
+
+
+Example
+Input:
+
+Test 1:
+1
+7 7
+1 2
+
+2 4
+1 3
+5 3
+5 6
+6 4
+7 5
+
+1 7
+
+Test 2:
+1
+10 9
+1 2
+2 4
+1 3
+5 3
+5 6
+6 4
+7 5
+9 10
+10 8
+1 10
+
+Output:
+2
+-1
+Explanation
+Test case 1:You can simple make the roads from city 5 to 3 and from city 7 to 5 bidirectional. So the minimum possible answer in 2.
+Test case 2:You cannot reach from city 1 to city 10 by making any existing roads bidirectional. So you need to construct a new road. Hence the answer is -1.
+
+Note:
+Use fast input-output.
+

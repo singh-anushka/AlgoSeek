@@ -1,0 +1,36 @@
+
+
+In MirzapurMirzapur,there is a gang of kaleen bhaiya.Due to some reasons the gang split into different small groups.
+Some of them joined Guddu bhaiya and some kaleen bhaiya.
+Two of the gang leaders decided that the whole GangGang will be divided in such a way that no two friends exist in the same gang.But they are not intelligent enough to do the task.So you have to do this for them.
+There were NN number of people in the gang [1,2,....N] and many of them are friends to each other.You have given the friend list.You have to determine that it is possible to divide them in such a manner or not.
+
+Input:
+
+ First line will contain T, number of testcases. Then the testcases follow.
+ Second line will contain N,total number of people.
+Third line will contain F,total number of friend list.
+Fourth line will contain a space separated two integers A,B,means A is friend to B.
+
+Output:
+
+For each testcase, output in a single line YeS if it is possible or No if it is not.
+
+Constraints:
+
+ 1≤T≤100
+ 2≤N≤105
+ 1≤F≤105
+ 1≤A,B≤N
+
+Sample Input:
+1
+4
+2
+1 2
+3 4
+
+Sample Output:
+YeS
+
+

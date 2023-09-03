@@ -1,0 +1,28 @@
+
+Bob is organizing a programming event. The entry fees for the event is Rs.XRs.X per participant. The prize pool is Rs.YRs.Y. What is the minimum number of participants Bob needs so that he earns a profit of at least Rs.P.
+Input:
+
+First line contains a single integer T, the number of test cases.
+Each test case contains three space-separated integers, X,Y and P.
+
+Output:
+For each test case, output in a single line the required answer.
+Constraints
+
+1≤T≤105
+1≤X,Y,P≤109
+
+Sample Input:
+5
+34 37 28
+16 44 36
+37 43 50
+22 13 28
+41 10 14  
+Sample Output:
+2
+5
+3
+2
+1  
+

@@ -1,0 +1,27 @@
+
+On the event of the Williams’s 15th birthday, Williams’s mom bought a big circular cake for him and garnished it with k nice looking candles placed equally spaced around the circumference of the big beautiful cake, i.e., the lengths of the arcs that connect any two adjacent candles are same .
+William listed the candles from 1 to k in clockwise fashion. He then chose two candles, say  A and B and lit them up. Now, he left the cook room and decided to come back in later with his companion to celebrate the birthday.
+In-between William's little sister came to the cook room and saw the big beautiful cake. She wants to light up one of the not lit candles C such that angle ACB is an obtuse angle. She thinks that such a pattern of lit candles will be auspicious. Can you find out how many candles  C She can light up?
+Input:
+The first line contains a single integer T, the number of test cases. Each test case is described by a single line containing three space-separated integers k, A, B.
+Output:
+For each test case, output a single line containing one integer: the answer for the test case.
+Constraints
+ · 1≤T≤105
+ · 3≤k≤105
+ · 1≤A,B≤k
+ · A≠B
+Sample Input:
+3
+6 1 3
+6 1 4
+10 1 5
+Sample Output:
+1
+0
+3
+EXPLANATION:
+Example case 1. Only candle with number 2 is suitable.
+Example case 2. No matter how we choose C the angle would have 90 degrees.
+Example case 3. Candles with numbers 2, 3, 4 are suitable.
+

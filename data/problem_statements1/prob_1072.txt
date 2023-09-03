@@ -1,0 +1,30 @@
+
+
+Akshay found some electrical motors of XX rpm speed. He made a car from this motor with wheels of radius r cm. The motor is connected to a battery which lasts for t mins. Akshay wants to know how far did the car travel before the battery exhausted.
+
+Note:- Output the floor value 
+
+Input:
+
+First-line will contain T, the number of test cases. Then the test case follows. 
+ Each test case contains X,r,t (speed of the motor,radius of the wheel and time respectively)
+
+Output:
+For each test case, print the floor value distance(in cm) covered by the car
+Constraints
+
+1≤T≤1000
+1≤X,r,t≤104
+1≤r,t≤100
+π=3.141
+
+Sample Input:
+2
+300 4 2
+150 5 3
+
+Sample Output:
+15076
+14134
+
+

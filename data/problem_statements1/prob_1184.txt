@@ -1,0 +1,45 @@
+
+Chef has an array A which is a permutation of natural numbers till n. He defines value of an array as no of elements in the array whose neighboring elements have sum at least k.(Note that first and last element of an array have only 1 neighboring elements where as remaining elements have 2 neighboring elements each.)
+You don't know the permutation that chef has, so you decide to find the sum of the values of all possible permutations. Given n and k you need to find this sum and output it modulo 1000000007 (109+7).
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, two integers n,k. 
+
+Output:
+For each testcase, output in a single line sum of value of all possible permutations modulo 1000000007.
+Constraints
+
+1≤T≤100000
+2≤n≤105
+2≤k≤105
+
+Subtasks
+
+30 points :
+2≤n≤1000
+2≤k≤1000
+70 points : Original constraints
+
+Sample Input:
+2
+2 2
+3 3
+
+Sample Output:
+2
+10
+
+EXPLANATION:
+In first case since only 2 permutations are possible (1,2) and (2,1) and each of which has only one element 1 whose sum of neighboring elements is 2, value of both permutations is 1 and hence required ans is 2.
+For 2nd test case, we have following permutations:
+1,2,3 - Value = 1
+1,3,2 - Value = 3
+2,1,3 - Value = 1
+2,3,1 - Value = 3
+3,1,2 - Value = 1
+3,2,1 - Value = 1
+
+Hence, ans is 1+3+1+3+1+1 = 10
+
+

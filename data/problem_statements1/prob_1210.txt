@@ -1,0 +1,41 @@
+
+“Do you understand what’s going on in here, TARS?”
+The way out of the tesseract is a lower dimensional puzzle which consists of kk-Squares, consisting of a k∗k∗1 grid of cubies, where the solved configuration consists of six monochromatic faces. From any k-Square configuration, there are 2k possible moves to transform the configuration into a new configuration.
+Each move changes the position and orientation of exactly one row or column of cubies from a
+input configuration in the following way: to move row (or column) i of a configuration, reverse
+the order of the cubies within that row (or column), and flip the orientation of each cubie in the
+row (or column) upside-down.
+We will represent a k-Square configuration via a length-k array of length-k arrays, where
+the yth inner array corresponds to the yth row of the configuration, and the xth element of row y corresponds to the cubie positioned at row y and column x. We represent each cubie as an integer between 1 and k2 inclusive, where integer i represents the cubie that exists in row y=floor(i−1/k) and column x=i−ky−1 in the solved configuration. In addition, we use positive i when the cubie in the configuration has the same orientation as in the solved configuration, and negative i when the cubie is upside-down. For example, the two configurations shown above have the following representations:
+
+C1=((1,2,3,4),(5,6,7,8),(9,10,11,12),(13,14,15,16))
+C2=((1,2,−15,4),(5,6,−11,8),(9,10,−7,12),(13,14,−3,16))
+here, C2 = move(C1, ("col", 2))
+
+Joseph Cooper now needs your help!
+Find the shortest sequence of moves to solve the k-Square. The input will be a k-square configuration, and it should return a list of moves where: (1) each move is of the form (s,i) for some s in { "row","col"} and i in 0,.....,k−1, and (2) applying the sequence of moves in order to the input configuration results in the solved configuration. If there are multiple sequences of moves always choose to apply a “col” move before a “row” move, and between moves of the same type (“row” or “col”) choose the move with a smaller index.
+Input format
+
+The first line contains k, the side of the k-square.
+The following k lines contains k integers, such that the ith integer in the jth line aij  corresponds to the cubie positioned at row i and column j.
+
+Constraints
+
+1≤k≤10
+−k2≤aij≤k2
+
+Output Format
+
+Print n, the number of moves in the shortest sequence.
+In the following n lines print the moves, where the ith line contains a move of the form (s,i) as a string s followed by a space followed by integer i.
+
+Sample Input
+2
+1 -4
+3 -2
+
+Sample Output
+1
+col 1 
+
+

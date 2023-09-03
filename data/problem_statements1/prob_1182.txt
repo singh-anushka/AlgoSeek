@@ -1,0 +1,32 @@
+
+There was a time when ghouls and humans co-existed together, but this year's ghouls are more thirsty for blood so they decided to attack Tokyo city at night. leader of ghouls Aogiri (one eye ghoul) is highly skilled in Number theory, he made a plane that every ghoul must be separated by some distance whose values match to a Pythagorean prime number.
+But, fortunately, this information was leaked, so kishou arima (Special Class Ghoul Investigator )     decided to capture ghouls. but unfortunately, he only knows the location of only one ghoul, and he doesn't know how to calculate the Pythagorean prime.
+help kishou arima to capture ghouls.
+yours have given a K location of that ghoul. 
+your task is to find the next 2 Pythagorean primes after K.
+Pythagorean primes:
+We know the pythagoras theorem C = √A2+B2
+Remove that square_Root so we get D = A2+B2 where D = C2.
+ If the D is prime then that is is known as Pythagorean prime.
+ Example: 32+22 => 9+4 => 13, So 13 is pythagorean prime.
+Input:
+The first line contains integer ​T (1≤​T​≤1000)​ — the number of test cases then on the next T lines each line is having integer​ K ​(1≤K≤106)​ - K represents Pythagorean prime.
+Output:
+On a single line print the next 2 Pythagorean primes.
+Constraints
+
+1≤T≤1000
+2≤K≤106
+
+Sample Input:
+  3
+  5
+  17
+  61
+
+Sample Output:
+ 13 17
+ 29 37
+ 73 89
+
+

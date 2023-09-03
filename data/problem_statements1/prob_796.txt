@@ -1,0 +1,54 @@
+
+Foundling Shreyas is an Imperial double agent. He wants to effectively end life on Mandalore, so he set off a huge bomb. But Shreyas is incompetent, so the emperor tasked Commander Keyur to confirm that all life on Mandalore is destroyed. Keyur set up a satellite to study the terrain and detect any signs of life on the surface of Mandalore.
+The satellite has located the saplings on the surface of Mandalore. Since transmission of signals is expensive, the satellite is programmed to send a bare minimum of data that can be used to understand the terrain.
+Input Format
+
+First line contains 2 integers NN, MM
+N lines follow
+Each of the N lines contains a string S and two integers a, b.
+M lines follow
+Each of the M lines contains two integers u, v.
+
+Output Format
+Output a single non-negative integer.
+Constraints
+
+2≤N≤105
+1≤M≤105
+1≤|S|≤104
+0≤|a|,|b|≤109
+1≤u,v≤N
+Sum of |Si| over all strings is less than 10^5
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4 5
+Behot 0 3
+Varos 1 2
+Galek 2 1
+Vormur 3 0
+1 2
+1 3
+1 4
+2 4
+3 4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+8
+
+
+

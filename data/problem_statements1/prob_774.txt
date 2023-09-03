@@ -1,0 +1,32 @@
+
+ 
+Fluffy the squirrel is playing with a graph. There is an undirected graph with n nodes. Initially, there is an edge between each pair of nodes, i.e. the graph is a complete graph. However, m edges were deleted from the graph by Flippy the naughty bird. Moreover, some of the nodes are already colored with either black or white. Fluffy the squirrel aims to color each uncolored node in one of the colors black or white, such that for every pair of nodes with the same color, there is an edge between them. Can you determine the number of ways Fluffy can color the remaining nodes to satisfy this?
+ 
+Input
+The first line contains two integers, n and m. The next m lines contain two integers each, ui and vi, denoting an edge that has been removed from the graph. It is guaranteed that ui and vi are not equal and each edge appears at most once. Finally, the last line contains a string of length n. The i-th character of the string denotes the color of the i-th node, which is either 'B', for black, 'W', for white or '?', for uncolored.
+Output
+Output a single integer, the number of ways to color the graph that satisfies the conditions. Since the answer might be too large, output the remainder of the answer when divided by 1000000007 (109 + 7).
+Constraints
+
+1 ≤ n, m ≤ 100000
+
+Subtasks
+
+Subtask 1 (44 points) : 1 ≤ n ≤ 20,  1 ≤ m ≤ 77. Time limit = 3s.
+Subtask 2 (56 points) : Original Constraints. Time limit = 1s.
+
+Example
+Input:
+4 3
+1 2
+2 3
+3 4
+B??W
+
+Output:
+1
+
+ 
+Explanation
+Example case 1. The only possible way to color the edges is BWBW. Note that BWWW doesn't work because vertices 2 and 3 are of the same color but they're not connected by an edge. 
+

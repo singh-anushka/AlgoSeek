@@ -1,0 +1,55 @@
+
+Shin Chan again goes crazy in trying to build cubes of different sizes with finger-licking French Fries. Help Shin Chan in finding out the number of french fries needed to build those differently sized cubes. Assume that all the french fries are of equal length.
+For example a cube of size 2 will look like this:
+
+Therefore the number of unit fries required to construct the cube is 54.
+Input Format
+
+First line will contain T, number of testcases. Then the testcases follow.
+Each testcase contains of a single line of input, one integer N, the size of the cube.
+
+Output Format
+For each testcase, output in a single line the number of French fries required to build a cube of size N.
+Constraints
+
+1≤T≤100
+1≤N≤1000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+7
+1
+2
+3
+4
+5
+10
+20
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+12
+54
+144
+300
+540
+3630
+26460
+
+
+Explanation
+Case 3: The problem expects us to construct a grid like cube with size N. So inorder to costruct a grid of size 3 we need 144 unit line segments to do so. 
+

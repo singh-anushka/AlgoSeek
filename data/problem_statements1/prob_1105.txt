@@ -1,0 +1,79 @@
+
+Ravi and vishal are playing Quiz in them, it's turn of vishal to ask question to Ravi,  so the question of Vishal is      " You have given n number of V shaped Rods.  you can arrange them in any way (two V shaped roads may or not intersect each other) you can bisect them or join them in a perpendicular or Parallel way. Your task is to answer maximum possible number of  region we can create by arranging n number of rods in different manners "  
+So help Ravi to answer a question…. 
+        ( check explanation for hint )
+Input Format
+
+The first line consists of the number of test cases T.
+Next T lines consist of the number of V shaped rods n.
+
+Output Format
+
+For each test case print a single line consisting of the maximum regions obtained.
+
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤n≤109∗1091≤n≤109∗109
+
+Subtasks
+
+100 points : Orignal Contraints
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+1
+2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+7
+
+
+Explanation
+Test case 1: For one V shaped road there will be 2 regions 
+
+Test case 2: For n=2 the following figure depicts the case of maximum regions: 
+
+                        Sample Input 2
+                        
+
+
+
+
+
+3
+3 
+5 
+4
+
+
+
+                        Sample Output 2
+                        
+
+
+
+
+
+16
+46
+29
+
+
+

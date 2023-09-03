@@ -1,0 +1,30 @@
+
+Leonardo is the best friend of the chef and a good mathematician also. When the chef is stuck in any problem he asks for help from his friend Leonardo.                    
+Unfortunately, the chef is stuck in a problem and asks from his mathematician friend to calculate the sum from position LL to RR (Inclusive) of the special Fibonacci sequence.
+Special fibbonacci sequence (sf) is defined as 0,1,1,2,3,5,8,3…... i.e. the ith term of the series is the ith term of fibonacci sequence modulo 10.
+Formarly, Leonardo has to calculate  v= ∑i=LR sfi
+If the given range is invalid, print −1
+CONSTRAINTS.
+1<=T<=10^4
+0<=L<=10^7
+0<=R<=10^7
+INPUT
+First contains number of testcases T .
+Each testcases contains single line two space separated integer L and R.
+OUTPUT
+Print a singe line value of v if possible else print -1.
+SAMPLE INPUT
+3
+1 4
+0 5
+3 3
+SAMPLE OUTPUT
+7
+12
+2
+EXPLANATION
+f1%10 =1+ f2 %10=1+ f3%10 =2 + f4%10=3 is  7
+f0%10= 0+f1%10=1+ f2%10 =1+f3 %10=2+f4%10=3+f5%10=5 is 12
+f3%10=2 is 2
+Sum is possible if  R-L is Non-negative.
+

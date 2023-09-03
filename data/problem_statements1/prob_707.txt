@@ -1,0 +1,35 @@
+
+The Festive season is coming soon and Lisa is worried that her treehouse is not
+ready for the guests. The house has n rooms and n-1 bidirectional paths. From
+any room in the treehouse, there is a path to every other room. For each path
+Lisa knows whether the path is clean or not.
+She has n children in her house numbered from 1 to n. If the i-th child is selected
+he promises to clean all the paths from i-th room to room 1, which is the rooted
+room of Lisa’s treehouse. In return, Lisa promises to reward these children with
+gifts.
+Since Lisa has a limited amount of money she wants to select the minimum
+number of children in such a way that after they are selected all the paths in the
+treehouse is clean.
+Input:
+
+The first line consists of n the number of rooms in Lisa’s treehouse 
+The next n-1 lines contains three natural numbers u,v and w where u and v are the connected rooms and w represents the condition of the edge {u,v}. 
+If w is 1 then the edge {u,v} is clean otherwise if w contains 2 then {u,v} is untidy .
+
+Output:
+Print a single integer the minimum number of children Lisa needs to clean the treehouse
+Constraints
+
+2≤n≤1052≤n≤105
+1≤u,v≤n1≤u,v≤n
+1≤w≤2
+
+NOTE:- The treehouse represents a tree.
+Sample Input:
+4
+1 2 2
+2 3 1
+2 4 2
+Sample Output:
+1
+

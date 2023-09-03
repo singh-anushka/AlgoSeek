@@ -1,0 +1,40 @@
+
+Chefina is not too happy with the way Chef has treated her in the past. To impress her, Chef takes her to the Toy Store in Chefland. The Toy Store consists of nn toys, each with a price ai.ai.
+The Toy store of Chefland is unique in its own ways:
+
+The amount of each toy in the store can be positive, negative or zero.
+The total amount of purchase is calculated by multiplying the amounts of the items picked.
+
+Find the maximum amount of purchase Chef can make from the Toy Store by picking up at least one toy to impress Chefina.
+Input:
+
+The first line of the input contains a single integer T — the number of test cases in the given input. Then follow T descriptions of individual tests.
+The first line of each test case contains an integer n, the number of toys in the toy store.
+The second line contains n integers a1,a2,..,an; denoting the price of each toy.
+
+Output:
+For each test case, output in a single line, the maximum amount of purchase Chef can make from the toy store.
+Constraints:
+
+1≤T≤1000
+1≤n≤50
+−1000≤ai≤1000
+
+It is guaranteed that the answer fits in a 64 bit integer
+Sample Input:
+2
+4
+4 -1 2 0
+3
+100 100 100
+
+Sample Output:
+8
+1000000
+
+Explanation:
+
+For the first test case, Chef has to purchase items 1 and 3 with a total amount of 8. No other combination of toys has a higher amount than this.
+For the second test case, Chef can purchase all items.
+
+

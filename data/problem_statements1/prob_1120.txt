@@ -1,0 +1,27 @@
+
+ 
+Avni likes Paper Crafts.She wants to make beautiful paper crafts for decorating her home.For making these crafts,she requires  to cut a colourful paper of size l X b into smaller identical pieces such that each piece is a square having maximum possible side length with no left over piece of paper.
+ 
+Input
+The first line contains an integer T. T lines follow. Each line contains two space separated integers l  and b which denote length and breadth of the paper.
+Output
+T  lines, each containing an integer that denotes the number of squares of maximum size, when the paper is cut as per the given condition.
+Constraints
+
+1 ≤ T ≤ 1000
+1 ≤ l,b ≤ 1000
+
+ 
+Example
+Input:
+2
+2 2
+6 9
+
+Output:
+1
+6
+
+
+ 
+

@@ -1,0 +1,28 @@
+
+New Year is just around the corner, so for this new year Adarsh wants to renovate the UIET Basketball court, dimensions of basketball court are LL(length) and BB(width). He has an infinitely large synthetic sheet which he wants to place on the surface of the basketball court in the shape of squares of equal sizes(Formally you have to cut out equal sized squares from infinite sheet to place over the surface of the court with its size parallel to sides of the court). The cost of cutting one square piece from the synthetic sheet is X(irrespective of size of square).He wants to minimize the cost of cutting. You have to help him find out the length of the side of the square such that the total cutting cost of all squares is minimum, and also find the total cutting cost.
+NOTE- The squares should not overlap, all squares should be equal in size and should perfectly cover the total surface of the court.
+Input:
+You are given T independent test cases, each test case contains three integers L(length of court), B(width of court), X(cost of cutting one square) respectively.
+Output:
+For each test case print two space separated integers- length of side of square such that total cost is minimized and total cutting cost of all squares.
+Constraints
+
+1≤T≤100
+1≤L,B≤108
+1≤X≤105
+
+Sample Input:
+2
+4 2 6
+5 1 4
+
+Sample Output:
+2 12
+1 20
+
+EXPLANATION:
+Example Case 1: 
+We can cut two squares with side 2 and place them side by side, it will cover the whole surface and cost will be 6*2=12.
+Example Case 2: 
+We can cut five squares with side 1 and place them in a line, it will cover the whole surface and cost will be 5*4=20
+

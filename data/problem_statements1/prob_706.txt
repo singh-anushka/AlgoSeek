@@ -1,0 +1,55 @@
+
+
+Bob likes trees and XOR (Exclusive OR) very much. So he created a tree with each edge having a weight associated with it.
+One day his friend Alice came to his house, after playing video games for some time they got bored and decided to play something else. Bob showed the tree to Alice and told her that given any 2 vertices in the tree he can tell the XOR of all the weights on the unique path joining these 2 vertices. 
+Alice thought it was a little easy and wanted to twist this a little bit. Now she proposed a different version involving q queries:
+
+
+Each query can be of 2 types.
+1 x y change the weight of xth edge to y.
+2 u v find the xor of the weights on the path joining vertices u and v.
+
+
+Can you help Bob solve this problem? For every query of 2nd type output the XOR value.
+
+Input
+
+First line will contain n the number of vertices in tree.
+Next n-1 lines contain description of the edges in the form ui vi wi denoting an edge between ui and vi with the weight wi.
+Next line contains q denoting number of queries.
+Next q lines contains queries as mentioned above.
+
+Output
+For each query of 2nd type output the XOR of the weights on the path from vertex u to v.
+Constraints
+
+1 <= n <= 105
+1 <= ui,vi <= n
+1 <= wi <= 109
+1 <= q <= 105
+1 <= x <= n-1
+1 <= y <= 109
+1 <= u,v <= n
+
+Example
+Input:
+5
+1 2 5
+1 3 4
+2 4 6
+4 5 7
+5
+1 1 4
+2 2 5
+2 3 4
+1 4 9
+2 1 5
+
+
+Output:
+1
+6
+11
+
+
+

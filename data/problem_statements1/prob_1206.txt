@@ -1,0 +1,80 @@
+
+You got a task to a program GPA calculator for semester exams of CMRTC. There are N subjects. respective subject grades and credits were given to you. Credits for each subject are based on credits for that subject and grade obtained. The points for each grade are as follows.
+
+
+
+ Grade
+Points
+
+
+
+
+O
+10
+
+
+A+
+9
+
+
+A
+8
+
+
+B+
+7
+
+
+B
+6
+
+
+C
+5
+
+
+F
+0
+
+
+
+Credit points (CP) = grade point (GP) x credits for that subject(CS).
+
+GPA=
+
+    Σ
+CP/
+    Σ
+CS
+
+Input:
+•First-line contains the total number of students. 
+
+• For each student, contains a single line of input as the number of subjects(N) and the next N lines contain grades(In uppercase) obtained along with credits for that subject separated by a space.
+OUTPUT:
+For each student print GPA score with a maximum of 2 points after the decimal(0’s should be ignored). Print FAIL if a student fails in at least one subject.
+
+Constraints: 
+0 < Noofstudents < 21
+0 < N < 11
+
+Sample Input: 
+2
+5
+O 3
+A+ 2
+A 2
+B+ 3
+B 4
+6
+B+ 4
+B+ 4
+O 3
+O 1.50
+O 1.50
+O 3
+ 
+Sample Output: 
+7.79
+8.59
+

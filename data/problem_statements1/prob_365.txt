@@ -1,0 +1,28 @@
+
+ 
+
+Chef has an array A of N elements where each element is in range [0, MAX]. Chef was tired of dancing at the party and decided to partition the array such that each element is in a partition and the partition are subsegments of the array. He also defined a partitioning to be good if in every partition there is at max K unique numbers. Now chef is wondering how many good partitions of the given array exist. Help him calculate this value  mod 1e9 + 7. 
+
+ 
+Input
+The first line of each test case contains a two integers N and K. The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.
+ 
+Output
+Output one integer, the number of good partition mod 1e9 + 7.
+ 
+Subtasks
+Subtask 1(20 points): N ≤ 103,MAX = 104
+Subtask 2(20 points): N ≤ 103,MAX = 109
+Subtask 3(60 points): N ≤ 105,MAX = 109
+Example
+Input:
+4 2
+1 2 3 2
+
+Output:
+6
+
+ 
+Explanation
+The good partitions are as follows: 1|2|3|2, 1|2|3 2, 1|2 3 2, 1|2 3|2, 1 2|3 2, 1 2|3|2
+

@@ -1,0 +1,49 @@
+
+          
+            Riyaz challenged  Vikas to find a number called MAGIC NUMBER. In his view magic number is defined as the last digit of the value ababa^{b}
+ a and b both are not 0. You have to find the  MAGIC NUMBER.
+
+            
+                
+                    Input Format
+
+First line will contain T, number of testcases. Then the testcases follow.
+Each testcase contains of a single line of input, two integers a,b.
+
+Output Format
+                    For each testcase, output in a single line the magic number
+Constraints
+
+1≤T≤20
+0≤a≤20
+0≤b≤2147483000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3 10
+6 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+9
+6
+
+
+Explanation
+                    3^10=59049
+6^2=36
+

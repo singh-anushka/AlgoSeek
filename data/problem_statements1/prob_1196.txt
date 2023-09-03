@@ -1,0 +1,54 @@
+
+Ankit has to submit his assignment given by his master. But Ankit's friends are calling him again and again to play cricket, and Ankit couldn't resist himself from playing cricket. So could you help him solving the problem?
+Formally, you are given a sequence of N positive integers: B=(B1,B2,B3,B4,...,Bn) and Q Queries.
+In the ith query, (1≤i≤Q), given a positive integer Ai find the Aith smallest integer among the positive integers that differ from all of the B1,B2,...,Bn.
+Input Format
+Input is given in following format.
+N Q
+B1 B2 ... Bn
+A1
+A2
+.
+.
+.
+AQ
+Output Format
+Print Q lines. The ith line should contain the response to the ith query.
+Constraints
+
+1≤N,Q≤105
+1≤B1,B2,...,Bn≤105
+1≤Ai≤1018
+All values in input are integers.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4 3
+3 5 6 7
+2
+5
+3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+9
+4
+
+
+Explanation
+The positive integers that differ from all of B1,B2,...,Bn are 1,2,4,8,9,10,11,... in ascending order. The second, fifth, and third smallest of them are 2,9 and 4, respectively. 
+

@@ -1,0 +1,51 @@
+
+Karthik got a task. He should find the status of the student in a placement exam.
+A student is said to be qualifiedqualified only if his total score is strictly greater than or equal to 65%.
+There are 2 sections in the test as follows:
+
+Multiple choice questions: total 100 marks.  
+Coding round: total 150 marks.
+There is no sectional  cut off.
+Find his status based on mentioned condition and print as described in Output format. 
+
+Input Format
+
+First line will contain TT, number of testcases. Then the testcases follow.
+Each testcase contains of a single line of input, two integers M,R denoting scores in first and second sections of the test respectively.
+
+Output Format
+For each testcase, output in a single line 
+ qualified if the student is qualified else print not qualified. 
+Constraints
+
+1≤T≤100
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+50 100
+50 130
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+not qualified
+qualified
+
+
+Explanation
+For the first test case the student got (50+100)/(100+150) => 60% < 65% so you need to print not qualified. 
+For the second test case the student got (50+130)/(100+150) => 72% >= 65% so you need to print qualified.
+

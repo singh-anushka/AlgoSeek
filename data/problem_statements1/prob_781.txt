@@ -1,0 +1,24 @@
+
+You are given n cities which are connected by m roads. The cities intially has no houses.  You have to build either 5 or 6 or 7 houses in each city. There will never be a traffic
+jam on road connecting two adjacent city (two city are adjacent if it is directly connected with  single road) if sum of number of houses in the cities on both ends of road is odd.  
+Calculate the number of possible ways to build houses in a cities so there is no jam in any of road in  city. Since this number may be large, print it modulo 998244353.  
+Input
+The first line contains two integers n and m. The number of cites and the number of road, respectively.  Next m lines describe edges: i-th line contains two integers u, v indicates the city u connected with city v and vice versa.  
+Output 
+For each test print one line, containing one integer — the number of possible ways to write numbers 5, 6, 7 on the cites so
+there is no Jam. Since answers may be large, print them modulo 998244353.  
+Constraints
+1 ≤ n ≤3*10^5  
+0 ≤ m ≤3*10^5  
+1 ≤ u, v ≤ n;  
+u ≠ v  
+It is guaranteed that sum of all n and m in all test case is less than or equal to 3*10^5  
+Sample Input
+2 1
+1 2  
+Sample Output 
+4  
+Explaination
+Possible ways to distribute numbers in the first test:
+1-the city 1 should contain 5, and 2 should contain 6;  2-the city 1 should contain 7, and 2 should contain 6;  3-the city 1 should contain 6, and 2 should contain 5;  4-the city 1 should contain 6, and 2 should contain 7;    
+

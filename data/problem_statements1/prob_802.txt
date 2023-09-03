@@ -1,0 +1,66 @@
+
+
+It is time for the final face-off. Now Batman must travel to where Superman is waiting as soon as possible. However, it happens that a road maintenance task is currently underway in Metropolis. Batman knows that the city policy dictates only one road can be repaired at a time. So he must come up with the shortest route quickly as soon as he learns which road is being repaired.
+The city is designed as a graph having 'V' vertices and 'E'  bidirectional roads. Batman starts from one of these vertices and his destination is also one of these vertices.
+Input
+• The first line of the input is T number of test cases. T test cases follow.
+•For each test case, the first line contains 2 space separated integers V and E.
+•The next E lines follow, each containing 3 space separated integers u, v, w, where u and v denote the
+vertices connected by a road and w being the length of the road. u and v will always be different.
+•The next line contains 2 space separated B and S, denoting the vertices of Batman and Superman's
+position respectively.
+•The next line contains a single integer Q denoting the number of queries
+•The next Q lines each contain two integers u and v, denoting that the road connect u and v is
+under maintenance.
+
+Output
+•For each query, output a single line containing the minimum distance Batman needs to travel to get to his
+destination. If it is impossible to do so, output -1.
+
+Constraints
+1<=T<=5
+1<=V<=200000
+1<=E<=200000
+1<=Q<=200000
+1<=w<=1000
+1<=B,S<=V
+
+Example
+
+
+Input
+1
+6 9
+0 1 1
+1 2 1
+2 3 1
+3 4 1
+4 5 1
+2 4 5
+3 5 8
+1 3 3
+0 2 4
+0 5
+9
+0 1
+1 2
+2 3
+3 4
+4 5
+2 4
+3 5
+1 3
+0 2
+
+Output
+7
+6
+6
+8
+11
+5
+5
+5
+5
+
+

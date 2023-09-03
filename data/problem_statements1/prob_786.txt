@@ -1,0 +1,27 @@
+
+Civil students of Technical Club have prepared a map for the students which lists down the available paths between different areas in BBD. The map mentions information about NN areas and KK distinct routes that interconnects them. Also travelling from one area to another always takes 1minute in the map, if there is a direct route between those two areas.  B11 class  is planning a mass bunk today in which they will go from a source area S to another area D using the TC map. Before moving, Bhawna wishes to find the minimum time required to travel from area S to area D. The only student who is good in calculations is Deepak (CR of class) but he is busy solving a math question.  So you have to help Bhawna find minimum time to reach D from S (in minutes).
+Input:
+
+First line will contain two integers N,K. Number of areas and the routes in the TC  map.   
+Then next K lines have two space separated strings A1,A2. A route between A1 and A2.  
+K+1 line has two space separated strings S,D. The source and destination for mass bunk.
+
+Output:
+A single integer T answering the minimum time required to travel from S to D.
+Constraints
+
+2≤N≤10
+N≤K+1≤100
+
+Sample Input:
+3 2   
+
+NITM NIIT
+BBDU NIIT
+NITM BBDU
+Sample Output:
+2
+
+EXPLANATION:
+They will take 1 minute in path NITM -> NIIT and 1 minute in path NIIT -> BBDU. Hence 2 minutes is answer
+

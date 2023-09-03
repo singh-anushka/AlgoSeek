@@ -1,0 +1,50 @@
+
+Now it has all come down to choosing the best planets for our future to settle in.
+Dr Brand makes an interesting observation: any constellation that forms a k-primal tree when the closest stars are connected, will have an abundance of resources.
+
+A tree is called 00-primal, if it consists of a single isolated root node.
+Call a tree kk-primal if it consists of a root node having a prime number of children, each of which is the root of a (k−1)-primal tree, for a positive integer k>0.
+Additionally, the prime number of children each node has (if it is not a leaf node) must be unique when compared to all other nodes that are equidistant from the root. 
+
+When Dr Brand and his team found the wormhole, they immediately investigated the system on the other side and sent the group of scientists you gave on the Lazarus mission.
+But then, Brand thought: "Oh I should've tested if the star system forms a primal tree!" and he immediately took the star system, calculated shape and distances using the angles and apparent distances and formed its tree. But he is now unwell, so he wants you to check if the Lazarus mission will be a success.
+Given the tree as input, if it is k-primal, print YES followed by the value of k on a new line.
+Else, print NO.
+Input format
+
+First line has the number of nodes of the tree, n.
+Next n−1 lines have two space separated integers a and b, denoting an edge between a and b - in the tree.
+Input is guaranteed to be a tree.
+
+Constraints
+
+1≤n≤1.2∗106
+1≤a,b≤n
+
+Output format
+Print YES on one line followed by the value of k if the tree is k-primal, else print NO.
+Sample Input 1
+2
+1 2
+
+Sample Output 1
+NO
+
+Sample Input 2
+8
+1 2
+2 3
+1 4
+3 6
+7 3
+1 5
+8 3
+
+Sample Output 2
+YES
+2
+
+Explanation
+In the first case, no matter which node is taken as the root, it will have 1 child, and 1 not being a prime implies that the tree cannot be k-primal for any k.
+In the second case, the tree is 2-primal if rooted at 2. We observe that 2 has 2 children (prime), 1 has 2 children (prime) and 3 has 3 children (prime). Additionally, {1,3} and {2} are the set of nodes at a given distance from the root, and clearly, no prime number repeats at a given distance, as they are {2,3} and {2}, correspondingly.
+

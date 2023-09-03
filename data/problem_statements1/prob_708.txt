@@ -1,0 +1,41 @@
+
+During world war 11, there were NN cities and M roads connecting cities in a country. Each jth road in the country is of particular distance Dj and each ith city has population Ai.
+There was a secret message of the enemy intercepted which tells that enemy is going to attack the roads of the country. If an enemy attacks a particular road then that road becomes unusable. 
+Let us say that those roads which do not stop movement from one city to another if they are destroyed are called strong roads. In other words, a road is called strong road if after removal of only this road out of M roads in graph there remains a path between any two cities. Roads which are not strong are referred as weak roads. 
+Enemy is going to destroy all the weak roads of a country. Cities which are connected to at least K strong roads are called strong cities and rest are weak cities. Government decided to move all citizens which are in weak cities to strong cities.
+For each weak city, find out the distance to nearest strong city. Find sum of all such distances. If there does not exist a path to strong city from some weak city then the population of this weak citiy cannot be saved from enemy attack. Find the sum of population which cannot be saved from enemy attack.     
+Constraints
+
+1≤N≤105
+1≤M≤2∗105
+1≤K≤2∗105
+1≤Ai≤105
+1≤Di≤105
+
+Input Format
+
+First line contains 3 space seperated integers N M K
+The Second Line contains N space seperated integers where ith element denotes the population of ith city. 
+M lines, each line containing 3 space seperated integers x, y, Di which means there is a road from x to y with Di distance. (x != y).
+
+Output Format
+
+Two  space seperated integers A and B 
+Where A denotes the total distance to be calculated as explained above.
+Where B denotes the total population to be calculated as explained above.
+
+Sample Input
+5 6 3
+3 9 11 28 41
+1 4 2
+1 3 5
+1 2 3
+2 3 7
+3 4 9
+4 5 1  
+Sample Output
+5 41
+Explanation
+The road between 4 and 5 is weak road as if it is removed there is no path to go from 4 to 5. Rest all roads are strong roads. 4 and 2 are weak cities as they have only 2 strong roads which is less than K=3. 1 and 3 are strong cities as both of them have 3 strong roads. Therefore, after removing weak roads, there is no path to any strong city from weak city 5. Hence required sum of population is 41. 2 is a weak city with nearest strong city 1 at a distance of 3. 4 is a weak city with nearest strong city 1 at a distance of 2. Therefore, sum of distances is 3 + 2 = 5.
+
+

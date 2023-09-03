@@ -1,0 +1,55 @@
+
+ 
+
+
+A particular country has n cities and m bidirectional roads. The cities are labeled 1, 2, ..., n. Each road connects two distinct cities and can be traveled in both directions. Each pair of city is directly connected by at most one road and no city is directly connected to itself. A road connecting cities u and v is called interesting if for all other cities w, w is either directly connected to u or to v (or maybe both). Find the number of interesting roads in the country. 
+
+
+ 
+Input
+
+The first two lines will contain n, m, denoting the number of cities and roads respectively.
+The next m lines will contain a pair of integers u, v each, meaning that there is a road which connects cities u and v.
+A pair can appear at most once in this list and the numbers in each pair are guaranteed to be distinct. 
+
+ 
+Output
+
+Print a single line: the number of interesting roads in the country.
+
+ 
+Constraints
+
+1 ≤  n, m ≤  100000
+1 ≤  u, v ≤  n
+
+ 
+Example
+Input 
+3 3
+1 2
+2 3
+3 1
+
+Output:
+
+3 
+   
+Input:
+4 4
+1 3
+2 3
+2 4
+3 4
+
+Output:
+3
+
+ 
+Explanation
+  Example case 1. 
+All roads are good. 
+Example case 2. 
+The roads joining the cities (1, 3), (2, 3) and (3, 4) good. Road (2, 4) isn't good because city 1 is not directly connected to any of 2 or 4.    
+
+

@@ -1,0 +1,28 @@
+
+You are given two arrays(A and B) each of size NN.
+In one step you can choose any two index ll and r such that 1≤l≤r≤N and increment B[i] by 1 for l≤i≤r.
+Find the minimum number of steps required to make both are identical.
+Input:
+
+First line will contain N, size of each array. 
+Second line contains N space separated integers, ith number denotes the value of A[i]. 
+Third line contains N space separated integers, ith number denotes the value of B[i]. 
+
+Output:
+Print the minimum number of steps required to make both arrays identical.
+Constraints
+
+1≤N≤100000
+0≤B[i]≤A[i]≤109
+
+Sample Input:
+5
+1 2 3 4 5
+1 1 1 4 1
+
+Sample Output:
+6
+
+EXPLANATION:
+We can select the following ranges : [2,3] once, [3,3] once and [5,5] four times.
+

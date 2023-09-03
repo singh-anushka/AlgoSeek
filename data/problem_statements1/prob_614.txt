@@ -1,0 +1,40 @@
+
+Read problems statements in Hindi, Mandarin chinese, Russian, Vietnamese and Bengali as well.
+You are given a sequence of integers A1,A2,…,AN. You may change any number of its elements (possibly zero), obtaining a new sequence of positive integers B1,B2,…,BN. Each element of B must be an integer between 2 and 50 (both inclusive).
+Let's define an undirected graph G with N vertices (numbered 1 through N). For each pair of different vertices i and j, there is an edge between i and j if and only if Bi and Bj are coprime.
+You should choose the sequence B in such a way that G is a connected graph. The number of elements which need to be changed to obtain B from A should be minimum possible. Find one such sequence B and the minimum required number of changes.
+It can be proven that a solution always exists — it is always possible to modify sequence A in such a way that G is connected.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers A1,A2,…,AN.
+
+Output
+For each test case, print two lines. The first line should contain a single integer — the minimum required number of changes. The second line should contain N space-separated integers B1,B2,…,BN — the modified sequence.
+If there are multiple solutions, you may print any one.
+Constraints
+
+1≤T≤3⋅104
+1≤N≤50
+2≤Ai≤50 for each valid i
+
+Subtasks
+Subtask #1 (100 points): original constraints
+Example Input
+2
+2
+2 3
+2
+2 4
+
+Example Output
+0
+2 3
+1
+2 3
+
+Explanation
+Example 1: There is an edge in G between vertices 1 and 2. This graph is connected, so there is no need to change any elements.
+Example 2: There is no edge between vertices 1 and 2 since gcd(2,4)≠1. This graph is not connected. We can change element A2=4 to 3 and make this graph connected.
+

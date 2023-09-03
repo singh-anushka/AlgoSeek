@@ -1,0 +1,32 @@
+
+Given a Matrix  of size NXNNXN you have to reach the middle point of the matrix by breaking all the boundaries from any one  point i.e. any no on (i,j) of boundary or the perimeter in one box.
+If you break any one element on a boundary then you can directly go to the next inner boundary or inner box then you have to break this box and further move in until you have reached the middle of the square matrix.
+If the side of the square matrix is odd then you have to break this middle element too. 
+Each element of this matrix has a particular energy that is consumed in breaking this element. Now tell me what is the minimum energy consumed in moving to its middle.  Square Matrix has side NN.
+Boundaries in matrix can be created as follow:
+
+for this case: ans=1+2ans=1+2
+Input:
+
+First line will contain N, side of the square. Then the testcases follow. 
+A matrix of size N*N . containing integer values Ai
+
+Output:
+For each testcase, output in a single line answer the minimum energy required to reach the centre.
+Constraints
+
+1≤N≤100
+1≤Ai≤10000000
+
+Sample Input:
+3
+2   2    4  
+5   20   4
+1   2    1
+
+Sample Output:
+21
+
+EXPLANATION:
+First We will break outer box from 1 then inner box with energy 20 so total energy consumed is 1+20=21.
+

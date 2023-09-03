@@ -1,0 +1,41 @@
+
+You are provided a number NN. In one step, you can either divide NN by 6(if N is 0) or multiply N by 2 .
+Find the minimum number of steps required to get 1 from N or check if it is not possible.
+Input:
+
+First line will contain T, number of testcases. Then the testcases follow. 
+The only line of the test case contains a number N .
+
+Output:
+For each test case, print 
+
+the minimum number of steps required to get 1 from N, it is possible to do          
+−1, it is impossible to obtain 1 from N.
+
+Constraints
+
+1≤T≤2⋅104
+1≤N≤109
+N is integer
+
+Sample Input:
+    4
+    1
+    2
+    3
+    15116544
+
+Sample Output:
+    0
+   -1
+    2
+    12
+
+EXPLANATION:
+Consider the fourth test case.
+Divide N by 6 four times in a row and get 11664 (Updated N).
+Multiply N by 2 and get 23328.
+Divide N by 6 three times in a row and get 108 (Updated N).
+Multiply by 2 and get 216
+Divide N by 6 three times in a row and get 1.
+

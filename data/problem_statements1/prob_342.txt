@@ -1,0 +1,40 @@
+
+
+Munchi and BlackHammer like to play games. BlackHammer gives Munchi 2 numbers N and M and allowes him to perform following operations on the numbers-
+
+Subtract 1 from any one of the numbers.
+Divide both the numbers by their gcd.
+
+
+
+Now, Munchi wants to know the minimum number of operations to convert (N,M) to (1,1).
+
+Input
+
+First line contains T - Number of test cases.
+Next T lines contain 2 integers N, M
+
+Output
+Minimum operations to convert both N and M to 1.
+
+Constraints
+
+1≤T≤104
+1≤N,M≤500
+
+Example
+
+Sample Input
+1
+8 4
+
+
+Sample Output
+2
+
+
+Explaination
+-Operation 2: N=2 M=1
+-Operation 1(on N): N=1 M=1
+
+

@@ -1,0 +1,39 @@
+
+You are given an array A of n integers as input.
+You have to answer q queries.
+In each query, you are given two space-seperated integers, l & r, as input.
+For each query, you have to output the special value of the sub-array [l,..r].
+SpecialValue(Sub−Array[l,..,r]) = f(l) | f(l+1) | … | f(r−1), where | is the Bitwise−OR operator.
+f(i) = (A[i] x A[i+1]) | (A[i] v A[i+1]), where x is the Bitwise−XNOR operator, v is the Bitwise−XOR operator and | is the Bitwise−OR operator.
+Input:
+
+First line will contain n, the number of elements of array.
+Second line will contain array A of n integers.
+Third line will contain an integer q.
+Next q lines, will contain two integers, l & r.
+
+Output:
+For each query, output the special value of the sub-array [l,..r], in a new line.
+Constraints:
+
+2≤n≤105
+1≤A[i]≤109
+1≤q≤105
+0≤l<r≤n−1 (0-indexing)
+
+Sample Input:
+4
+0 2 3 0
+1
+1 3
+
+Sample Output:
+3
+
+Explanation:
+
+f(1) = (2 v 3) | (2 x 3) = (1 | 2) = 3
+f(2) = (3 v 0) | (3 x 0) = (3 | 0) = 3
+Hence, SpecialValue[1,..,3] = f(1) | f(2) = (3 | 3) = 3 
+
+

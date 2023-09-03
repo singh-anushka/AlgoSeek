@@ -1,0 +1,30 @@
+
+Arun placed a laser on a sheet making 45 Degree with both the edges at the top left corner. The sheet is a rectangle with dimensions of length n and width m.
+Then he divided the sheet into n∗m boxes of size 1∗1. He then put mirrors along all edges of the sheet facing inward so that the laser reflects accordingly.
+He considers the box illuminated if the laser passes through it. 
+If the laser strikes the corner of the sheet then it will retrace its path.
+Find the number of illuminated boxes.
+Input:
+
+First-line will contain T, the number of test cases. Then the test cases follow. 
+Each test case contains a single line of input, two integers N,M. 
+
+Output:
+For each test case, output in a single line number of illuminated boxes.
+Constraints
+
+1≤T≤10000
+1≤N,M≤109
+
+Sample Input:
+1
+4 3
+
+Sample Output:
+12
+
+EXPLANATION:
+First test case:-
+n = 4 and m = 3 
+
+

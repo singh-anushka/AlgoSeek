@@ -1,0 +1,36 @@
+
+There is an array of size N.
+We have to make all the elements in the array equal.
+In one step you can select a particular index idx from the array and do one of the following.
+
+Replace array[idx] by array[idx]∗x where x is any prime number.
+Replace array[idx] by array[idx]/y where y is any prime divisor of array[idx](if exists)  
+
+Find out the minimum number of steps required to make all the elements of the array equal.
+Input:
+
+First line will contain N, the size of the array. 
+Second line will contain N space separated integers representing the elements of the array. 
+
+Output:
+Print one integer, the minimum number of steps to make all elements in the array equal.
+Constraints
+
+1≤N≤100000
+1≤array[i]≤100000
+
+Sample Input:
+3
+2 4 3
+
+Sample Output:
+3
+
+EXPLANATION:
+One possible set of operations : 
+
+replace 3 by 1(divide 3 by 3)
+replace 1 by 2(multiply 2 to 1)
+replace 4 by 2(divide 4 by 2)
+
+

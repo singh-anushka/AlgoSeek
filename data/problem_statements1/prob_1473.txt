@@ -1,0 +1,46 @@
+
+You are provided with a weighted undirected graph GG and string SS. Each node in G has a letter attached to it. Find the minimum cost of a walk in G such that the path contains S as a subsequence i.e. S can be formed by removing 0 or more characters from the string formed by the concatenation of letters on the nodes on the walk.
+You are allowed to begin as well as end your walk at any vertex. Also, you can visit any vertex any number of times.
+Input:
+
+First line contains integer T, representing number of test cases. Each test case is as follows.
+The first line contains integers N and M and X - Number of nodes and edges  and the length of string respectively.
+The second line contains string S.
+The third line contains N characters. ith character represents the letter attached to the ith node.
+Following M lines contain u v w. This means u and v are connected by an edge weight w.
+
+Output:
+Output a single integer that represents the minimum cost of the path that contains S as a sub-sequence.
+If there is no path that contains S as a sub-sequence then output -1.
+Constraints
+
+1≤T≤3
+1≤N,X≤1000
+0≤M≤1e3
+1≤u,v≤N
+0≤w≤1000
+No two consecutive characters of string S are same.
+
+Subtasks
+
+30 points : N, M and X ≤100 
+70 points : Original constraints.
+
+Sample Input:
+1
+4 4 5
+ababc
+a b b c
+1 2 2
+1 3 1
+2 4 3
+3 4 1               
+Sample Output:
+4
+
+EXPLANATION:
+The path will be:
+1 - 3 - 1 - 3 - 4
+1 + 1 + 1 + 1 = 4
+
+

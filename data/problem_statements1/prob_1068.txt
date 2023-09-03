@@ -1,0 +1,36 @@
+
+You are given a positive integer N.
+Your task is to calculate total number of pairs (i,j) such that 1≤i,j≤N and HCF(i,j)=LCM(i,j). 
+Here HCF denotes the highest common factor and LCM denotes the lowest common multiple.
+Input:
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of test cases follows.
+The First and only line of each test case contains a single integer, N
+
+Output:
+For each of the T test cases, output the no. of pairs.
+Constraints :
+
+1≤T≤105
+1≤N≤109
+
+Sample Input:
+2
+3
+2  
+Sample Output:
+3
+2    
+EXPLANATION:
+EXPLANATION 1 :
+Pair which can formed :  (1,1)  , (1,2) , (1,3) , (2,1) , (2,2) , (2,3) , (3,1) , (3,2) , (3,3)
+LCM(1,1) =  HCF(1,1) = 1
+LCM(2,2) = HCF(2,2) = 2
+LCM(3,3) =  HCF(3,3) = 3
+there are only 3 pairs such that LCM(i,j) = HCF(i,j).
+EXPLANATION 2 :
+Pair which can formed :  (1,1)  , (1,2) , (2,1) , (2,2)
+LCM(1,1) =  HCF(1,1) = 1
+LCM(2,2) = HCF(2,2) = 2
+there are only 2 pairs such that LCM(i,j) = HCF(i,j).
+

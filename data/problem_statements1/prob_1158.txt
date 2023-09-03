@@ -1,0 +1,31 @@
+
+Chef and Chefina are playing a game. Chef is very good in Maths subject. He can quickly calculate the value of any equation given to him. On the other hand Chefina is good at remembering things. She can remember sequences or series of any length. In the game they decided to ask a question to each other, and the one who could not answer the question will lose. Chefina has already answered the Chef’s question and now it’s her turn to ask the question and Chef will answer it. The question asked by the Chefina is :
+There is a Sequence S. She will give its first term X, second term Y and third term Z. The nth term of the sequence is the sum of the previous three terms. Formally Sn=S(n−1)+S(n−2)+S(n−3). Then she will ask T queries. In each query she will give an integer N to Chef and Chef has to tell the Nth element of the sequence. Chef found this question very easy and thought he would answer quickly. But after looking at the constraints of T and N, he got confused and asked for your help. Are you able to find the answer i.e. Nth term of the given sequence.
+Note− As you can see size of the elements of sequence can be very large, so for every Nth term take modulo 1000000007 .
+Input:
+
+First line will contain four integers T, X, Y, Z number of testcases, first term, second term, third term respectively. Then the testcases follow. 
+Each testcase contains of a single line of input, one integer N.  
+
+Output:
+For each testcase, output in a single  number , the Nth term of the sequence.  
+Constraints
+
+1≤T≤10000
+1≤X,Y,Z≤10
+1≤N≤106
+
+Sample Input:
+3 1 3 4
+3
+5
+6  
+Sample Output:
+4
+15
+27   
+EXPLANATION:
+Case #1 : The sequence will be 1,3,4,8,15,27,50. We are asked to find 3rd term, which is 4.  
+Case #2 : The sequence will remain same here i.e. 1,3,4,8,15,27,50. 5th term is 15.    
+Case #3 : Again sequence will be same for third query also. And 6th term of the sequence is 27.
+

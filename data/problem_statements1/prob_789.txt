@@ -1,0 +1,44 @@
+
+In the city of Tokyo, there are NN houses spread throughout the city labelled from 11 to N. Some houses are used by HUMANS while some are used by GHOULS( a demon-like being or monstrous humanoid originating in pre-Islamic Arabian religion). Two houses are connected with each other through a road.
+To maintain the diversity and restrain the population from creating a group with same kind of being, the government of Tokyo has a strict rule known as Human Ghoul Neighbouring.
+Human Ghoul Neighbouring Rule : No two same type of species should have neighbouring directly connected houses. ( Suppose house 1 is occupied by human then all the houses that are connected from 1 should be of Ghoul’s and vice versa)
+Initially the N houses of Tokyo city is connected and has exactly N−1 roads (No self loop or cycles) in the map following the government rule of Human Ghoul Neighbouring.
+You just got a well paid job in Tokyo government. Because of limited number of roads there is too much rush on the road your job is to construct new roads in the city without violating Human Ghoul Neighbouring Rule.
+You are given the N houses and the way they are connected initially. You have to find the number of maximum roads you can add in the city such that the Human Ghoul Neighbouring rule keeps maintained. But due to privacy policies you are not given details of which house contains which species.
+Find the maximum number of additional road you can construct in the city of Tokyo.
+
+Note : After adding new roads it may contain cycles, you just need to take care of the Human Ghoul Neighbouring Rule.
+
+Input:
+
+First line will contain N, denoting number of houses.
+Next N−1 lines contains interger u and v denoting there is a road between house u and house v
+
+Output:
+Output a single integer - The maximum number of additional road you can add in the city
+Constraints
+
+1≤N≤105
+1≤u,v≤N
+
+Sample Input 1:
+3
+1 2
+1 3
+
+Sample Output 1:
+0
+
+Sample Input 2:
+4
+1 2
+1 4
+4 3
+
+Sample Output 2:
+1
+
+EXPLANATION:
+In case 1: houses can be [G, H, G] or [H, G, H] (H and G stands for Human and Ghoul in the i'th house). We can not add any new road in the map otherwise the Human Ghoul Neighbouring Rule will be broken, hence answer is 0.
+In case 2 : You can create a road between house number 2 and house number 3, hence answer is 1
+
